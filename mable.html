@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MAble</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/featherlight.gallery.min.css">
+	<link rel="stylesheet" href="css/featherlight.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.paroller.min.js"></script>
+	<script src="js/featherlight.min.js"></script>
+	<script src="js/featherlight.gallery.min.js"></script>
+	<script src="js/funciones.js"></script>
+	</head>
+	<body class="pagProyecto pagMable">
+	
+<!-- Header (presente en todas las páginas) -->
+
+
+	<header>
+	
+			<div class="c-RM c-RM--desktop">
+			<div class="c-RM__logo-wrap">
+				<a href="index.html"><img class="c-RM__logo" src="img/logo_experienciaok.png" /></a>
+			</div>
+			<input type="checkbox" id="c-RM__menu-toggle"/>
+			
+			<nav class="c-RM__mainNav">
+				<ul class="c-RM__l-menu">
+					<li class="c-RM__l-menu-item"><a href="index.html">Inicio</a></li>
+					<li class="c-RM__l-menu-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+					<li class="c-RM__l-menu-item c-RM__l-menu-item--active">
+						<a href="#">Proyectos</a>
+						<ul class="c-RM__l-submenu">
+							<li class="c-RM__l-submenu-item c-RM__l-menu-item--responsive-active"><a href="mable.html">MAble</a></li>
+							<li class="c-RM__l-submenu-item"><a href="introyeccion.html">Introyección</a></li>
+							<li class="c-RM__l-submenu-item"><a href="museos.html">Museo OK</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+			<button class="c-RM__mobile-btn">
+			<label for="c-RM__menu-toggle">
+				<img src="img/menu_icon.svg"/>
+			</label>
+			</button>
+
+		</div>
+	
+	</header>
+
+		
+<!-- -->
+
+		<section class="mainBanner MBMable"> <!-- El background en sí mismo se puede animar con Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp -->
+			<img class="logoProyecto" src="img/logo_mable.png"/>
+			<div class="bannerTexto">
+				<p><strong>Asistente electrónico sonoro</strong> para museos y galerías inclusivas</p>
+			</div>
+			<img class="flechaMainBanner" src="img/flecha.png"/>
+		</section>
+		
+		<section class="introduccion">
+			<h2>Para museos más amables y portables</h2>
+			<div class="cuerpoIntro">
+				<p><strong>MAble</strong> es un dispositivo electrónico de tamaño pequeño que favorece la inclusión del público general, ciegos y personas de la tercera edad a los museos de arte, historia, ciencias o cualquier otro tipo. El dispositivo se activa con la simple acción de apoyar un llavero sobre el dispositivo, de modo que el mismo proveerá información sonora al público, de las obras de arte y/o elementos históricos, ubicados frente a ellos.</p>
+				<p>Cada uno de los mismos estará ubicado en lugares estratégicos y fácilmente accesibles, tanto visualmente como físicamente, y la adquisición del llavero se solicita al ingresar al establecimiento.</p>
+				<p>Nuestro objetivo de interacción es que sea inclusivo e intuitivo, teniendo en cuenta tanto al público en general, como las personas de tercera edad, y ciegos.</p>
+			</div>
+		</section>
+		
+		<section class="videopitch">
+			<iframe src="https://player.vimeo.com/video/276517811?portrait=0" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</section>
+		
+		<section class="contenido">
+			<div class="areaTexto">
+				<h3>¿Por qué surge?</h3>
+				<p>Como lo dicta la ley argentina, el acceso a la cultura tiene que ser universal y hoy los museos y galerías, sobre todos los museos que pertenecen al Ministerio de la Cultura, no cumplen estos requisitos, discriminando principalmente a ciegos, ancianos y al público en general. Por ejemplo: No tocar los elementos de exhibición limita a los ciegos. El código QR para informar sobre los elementos exhibidos, resulta no intuitivo, excluye a los ciegos y la gran mayoría de las personas de tercera edad. Finalmente, las audioguías son elementos de mayor precios que el nuestro, con una lista interminable de audios que confunde más que clarificar.</p>
+				<p>También, hay una inaccesibilidad para el público en general al arte, que nuestra experiencia profesional nos provee para afirmarlo. No siempre hay guías disponibles para orientar, lo que ha promovido dichos como “un cuadro abstracto son simples manchas” o “una montaña de basura es una escultura”. Este tipo de comentarios están establecidos como una afirmación absoluta en la mayoría de la sociedad y buscamos revertir este efecto, con simples ayudas sonoras, buscamos ayudar a la imaginación.</p>
+			</div>
+			<div class="wrapImagenes"> <!-- Ventana de recorte -->
+					<div class="contImg">
+						<img class="img1" src="img/im_mable-1.jpg"/>
+					</div>
+					<div class="verGaleria">
+						<p>Ver galería de imágenes</p>
+					</div>
+			</div>
+			<div class="wrapGaleria">
+				<div class="galeriaImagenes" data-featherlight-gallery data-featherlight-filter="a">
+					<!-- Este contenido se genera dinámicamente -->
+					<button class="featherlight-close-icon featherlight-close cruz" aria-label="Close">✕</button>
+					<div class="contenedorThumbnails">
+						<a class="thumbnail" href="img/gal_mable-1.jpg"><img src="img/th_mable-1.jpg"></a>
+						<a class="thumbnail" href="img/gal_mable-2.jpg"><img src="img/th_mable-2.jpg"></a>
+						<a class="thumbnail" href="img/gal_mable-3.jpg"><img src="img/th_mable-3.jpg"></a>
+						<a class="thumbnail" href="img/gal_mable-4.jpg"><img src="img/th_mable-4.jpg"></a>				
+						<a class="thumbnail" href="img/gal_mable-5.jpg"><img src="img/th_mable-5.jpg"></a>				
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- Footer (presente en todas las páginas) -->
+		
+		<footer>
+			<div class="contacto">
+				<div class="infoContacto">
+					<div class="textoContacto">
+						<h4>Contacto:</h4>
+						<p class="separado">experienciaok@gmail.com</p>
+						<p class="separado">+54 911 57802653</p>
+						<p>horarios de atención:</p>
+						<p>9:00 - 18:00 hs</p>
+						
+					</div>
+					<div class="redes">
+						<h4>Seguinos en:</h4>
+						<div class="contLinksSN">
+							<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
+							<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
+							<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="formularioContacto">
+					<h4>Enviá tu consulta:</h4>
+					<form>
+						<p>Mail:</p>
+						<input type="text" name="mail" class="campo linea">
+						<p>Asunto:</p>
+						<input type="text" name="asunto" class="campo linea">
+						<p>Mensaje:</p>
+						<textarea name="subject" class="campo"></textarea>
+						<input class="botonEnviar" type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2018 Experiencia OK. Todos los derechos reservados.</p>
+			</div>
+		</footer>
+		
+<!-- -->
+
+	</body>
+
+</html>

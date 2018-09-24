@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Experiencia OK</title>
+	<meta name="description" content="Soluciones en Realidad Virtual y Aumentada para museos y artistas">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.paroller.min.js"></script>
+	<script src="js/funciones.js"></script>
+	</head>
+	<body class="pagInicio">
+	<!-- ------------------ INICIO MENU RESPONSIVE ------------------ -->
+	
+	<header>
+	
+			<div class="c-RM c-RM--desktop">
+			<div class="c-RM__logo-wrap">
+				<a href="index.html"><img class="c-RM__logo" src="img/logo_experienciaok.png" /></a>
+			</div>
+			<input type="checkbox" id="c-RM__menu-toggle"/>
+			
+			<nav class="c-RM__mainNav">
+				<ul class="c-RM__l-menu">
+					<li class="c-RM__l-menu-item c-RM__l-menu-item--active c-RM__l-menu-item--responsive-active"><a href="index.html">Inicio</a></li>
+					<li class="c-RM__l-menu-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+					<li class="c-RM__l-menu-item">
+						<a href="#">Proyectos</a>
+						<ul class="c-RM__l-submenu">
+							<li class="c-RM__l-submenu-item"><a href="mable.html">MAble</a></li>
+							<li class="c-RM__l-submenu-item"><a href="introyeccion.html">Introyección</a></li>
+							<li class="c-RM__l-submenu-item"><a href="museos.html">Museo OK</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+			<button class="c-RM__mobile-btn">
+			<label for="c-RM__menu-toggle">
+				<img src="img/menu_icon.svg"/>
+			</label>
+			</button>
+
+		</div>
+	
+	</header>
+	<!-- ------------------ FIN MENU RESPONSIVE ------------------ -->
+
+		<section class="mainBanner MBInicio" data-paroller-factor="0.5" data-paroller-type="background"> <!-- El background en sí mismo se puede animar con Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp -->
+			<div class="bannerTexto">
+				<p><strong>Experiencia OK</strong> es una empresa y colectivo artístico que realiza proyectos de investigación en las áreas de <strong>electrónica</strong> y <strong>realidad virtual.</strong></p>
+			</div>
+			<a href="quienes-somos.html">
+				<div class="botonConocerMas">
+					<p>Conocer más</p>
+				</div>
+			</a>
+			<img class="flechaMainBanner" src="img/flecha.png"/>
+		</section>
+		
+		<section class="proyectos">
+			<div class="boxProyecto boxSillon">
+				<div class="imgWrap">
+					<img class="imgProyecto" alt="Introyección" src="img/ip_hamacate.jpg"/>
+				</div>
+				<div class="textWrap">
+					<div class="textoProyecto">
+						<h2>Hamacate</h2>
+						<p><strong>Sillón colgante</strong> 360°, adaptado especialmente para experiencias en realidad virtual.</p>
+						<a href="introyeccion.html" class="verMas">Ver más</a>
+					</div>
+				</div>
+			</div>
+			<div class="boxProyecto boxIntro">
+				<div class="textWrap">
+					<div class="textoProyecto">
+						<h2>Introyección</h2>
+						<p><strong>Obra de arte contemporáneo</strong> con tecnología, compuesta por un sillón colgante fabricado con barrotes, similar a una pajarera colgante, con lentes de realidad virtual en su interior.</p>
+						<a href="introyeccion.html" class="verMas">Ver más</a>
+					</div>
+				</div>
+				<div class="imgWrap">
+					<img class="imgProyecto" alt="Introyección" src="img/ip_introyeccion.jpg"/>
+				</div>
+			</div>
+			<div class="boxProyecto boxMuseo">
+				<div class="imgWrap">
+					<img class="imgProyecto" alt="Museo OK" src="img/ip_museos.jpg"/>
+				</div>
+				<div class="textWrap">
+					<div class="textoProyecto">
+						<h2>Museo OK</h2>
+						<p>Servicio de <strong>previsualización en realidad virtual</strong> de posibles exhibiciones para museos, orientado a curadores.</p>
+						<a href="museos.html" class="verMas">Ver más</a>
+					</div>
+				</div>
+			</div>
+			<div class="boxProyecto boxMAble">
+				<div class="textWrap">
+					<div class="textoProyecto">
+						<h2>MAble</h2>
+						<p>Un <strong>dispositivo electrónico</strong> del tamaño de 15x15x5cm que permite la inclusión del público general, ciegos y personas de la tercera edad a los museos de arte.</p>
+						<a href="mable.html" class="verMas">Ver más</a>
+					</div>
+				</div>
+				<div class="imgWrap">
+					<img class="imgProyecto" alt="MAble" src="img/ip_mable.jpg"/>
+				</div>
+			</div>
+		</section>
+		<section class="patrocinio">
+			<p>Experiencia OK cuenta con el respaldo de:</p>
+			<div class="logosPatrocinio">
+				<div class="wrapSingleLogo">
+					<img class="logo" alt="Telefónica Open Future" src="img/logo_openfuture.png" />
+				</div>
+				<div class="wrapSingleLogo">
+					<img class="logo" alt="NeoMedia Lab" src="img/logo_neomedialab.png" />
+				</div>
+				<div class="wrapSingleLogo">
+					<img class="logo" alt="CIDEM" src="img/logo_cidem.png" />
+				</div>
+				<div class="wrapSingleLogo">
+					<img class="logo" alt="DRG" src="img/logo_drg.png" />
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="contacto">
+				<div class="infoContacto">
+					<div class="textoContacto">
+						<h4>Contacto:</h4>
+						<p class="separado">experienciaok@gmail.com</p>
+						<p class="separado">+54 911 57802653</p>
+						<p>horarios de atención:</p>
+						<p>9:00 - 18:00 hs</p>
+						
+					</div>
+					<div class="redes">
+						<h4>Seguinos en:</h4>
+						<div class="contLinksSN">
+							<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
+							<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
+							<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						</div>
+					</div>
+				</div>
+				<div class="formularioContacto">
+					<h4>Enviá tu consulta:</h4>
+					<form>
+						<p>Mail:</p>
+						<input type="text" name="mail" class="campo linea">
+						<p>Asunto:</p>
+						<input type="text" name="asunto" class="campo linea">
+						<p>Mensaje:</p>
+						<textarea name="subject" class="campo"></textarea>
+						<input class="botonEnviar" type="submit" value="Enviar">
+					</form>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© 2018 Experiencia OK. Todos los derechos reservados.</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

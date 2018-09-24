@@ -1,0 +1,815 @@
+
+/*###
+Contenidos (buscar con "%%")
+
+General
+- Webfonts
+- Tipografía general
+- Links
+- MODULO: MENU RESPONSIVE
+- Footer
+- Secciones - general
+- Banners - general
+- Headings - general
+
+Inicio
+- Inicio - portada
+- Inicio - proyectos
+- Inicio - patrocinio
+
+Quiénes somos
+- Texto explicativo
+- Integrantes
+
+Páginas de proyecto
+- Proyectos - banners
+- Proyectos - introduccion
+- Proyectos - videopitch
+- Proyectos - contenido
+- Proyectos - galeria
+
+*/
+
+/*-----------------------------------------------------------*/
+
+/*-------------GENERAL*/
+
+
+/*%% Webfonts*/
+
+
+@font-face {
+    font-family: 'd-dinregular';
+    src: url('../webfonts/d-din-webfont.woff2') format('woff2'),
+         url('../webfonts/d-din-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'd-din_expdinexp-bold';
+    src: url('../webfonts/d-dinexp-bold-webfont.woff2') format('woff2'),
+         url('../webfonts/d-dinexp-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_groteskbold';
+    src: url('../webfonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesklight';
+    src: url('../webfonts/hkgrotesk-light-webfont.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_groteskmedium';
+    src: url('../webfonts/hkgrotesk-medium-webfont.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesksemibold';
+    src: url('../webfonts/hkgrotesk-semibold-webfont.woff2') format('woff2'),
+         url('../webfonts/hkgrotesk-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+/*%% Tipografía general*/
+
+body{
+	font-family: 'hk_groteskmedium', Arial, sans-serif;
+	font-weight:normal;
+}
+strong{
+	font-family: 'hk_groteskbold', Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+/*%% Links*/
+
+a {
+	text-decoration:none;
+}
+
+/*------------- INICIO MODULO: MENU RESPONSIVE -----------------------*/
+
+/* %% Layout básico*/
+
+/* ---- Logo*/
+
+.c-RM{
+	background-color:black;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:10;
+}
+
+.c-RM a:link, .c-RM a:visited, .c-RM a:hover,.c-RM a:active{
+	font-family:'d-dinregular';
+	font-size: 1em;
+	color:white;
+}
+
+.c-RM .c-RM__logo-wrap{
+	width:250px;
+	margin-left:2.5%;
+	margin-right:50px;
+}
+.c-RM .c-RM__logo{
+	width:100%;
+}
+
+.c-RM #c-RM__menu-toggle{
+	display:none;
+}
+
+.c-RM .c-RM__l-menu a{ /*todos los links del menú*/
+	display:block;
+	padding:30px 0;
+	padding-left:12px;
+	background-color:black;
+}
+
+.c-RM .c-RM__l-submenu a{ /*links del submenu*/
+	display:block;
+	padding:15px 0;
+	padding-left:12px;
+	background-color:black;
+}
+
+
+
+/* ----------------- Versión de escritorio*/
+
+.c-RM--desktop{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* ---- Botón hamburguesa*/
+
+.c-RM--desktop .c-RM__mobile-btn{
+	display:none;
+}
+
+
+
+/* ---- Navegación*/
+
+.c-RM--desktop .c-RM__mainNav{
+	margin-right:2.5%;
+}
+
+/* ------ Menú principal*/
+.c-RM--desktop .c-RM__l-menu{
+	display:flex;
+}
+
+/* ------ Items*/
+.c-RM--desktop .c-RM__l-menu-item{
+	width:130px;
+}
+
+/* ------ Submenú*/
+
+.c-RM--desktop .c-RM__l-submenu{
+	display:none;
+	position:absolute;
+	width:inherit; /*toma el width del parent*/
+}
+
+/* ------ Colorear botones en hover*/
+.c-RM--desktop .c-RM__l-menu a:hover{
+	background-color:#222;
+}
+
+/* ------ Desplegar menu en hover*/
+.c-RM--desktop .c-RM__l-menu-item:hover > .c-RM__l-submenu{
+	display:block;
+}
+
+/* ------ Opción activa del menú*/
+
+/*Ver comentarios al final del módulo sobre la clase --active*/
+
+.c-RM--desktop .c-RM__l-menu-item--active{
+	border-bottom:2px solid white;
+}
+
+
+
+/*---------------------- Versión móvil*/
+
+.c-RM--mobile{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:55px;
+}
+
+.c-RM--mobile .c-RM__mainNav{
+	display:none;
+	padding:10px 0;
+}
+
+.c-RM--mobile .c-RM__mobile-btn{
+	margin-right:2%;
+	background-color:transparent;
+	border:none;
+	cursor:pointer;
+}
+
+/*toggle menu
+https://codepen.io/Sfate/pen/nLBGr*/
+
+.c-RM--mobile label{
+	cursor:pointer;
+}
+
+.c-RM--mobile #c-RM__menu-toggle:checked + .c-RM__mainNav {
+	display:block;
+}
+
+
+.c-RM--mobile .c-RM__mainNav{
+	position:absolute;
+	top:45px;
+	left:0;
+	width:100%;
+	background-color:black;
+}
+
+.c-RM--mobile .c-RM__l-submenu-item{
+	padding-left:22px;
+}
+
+/* ------ Opción activa del submenú*/
+/*hay dos clases diferentes: --active y --responsive-active. La primera solo actúa en el modo de escritorio, y está pensada para el menú principal (sin considerar el menu desplegable, en el cual no se marca la navegación de ninguna manera); la segunda solo actúa en responsive y se puede aplicar también al submenú (es la única clase a aplicar en el submenú). Si la página activa es de primer nivel (ej: Inicio), ese item va a tener las dos clases.*/
+
+.c-RM--mobile .c-RM__l-menu-item--responsive-active{
+	border-left:4px solid white;
+}
+
+/*------------- FIN MODULO: MENU RESPONSIVE -------------------------*/
+
+
+/*%% Footer*/
+
+footer{
+	background-color:#2c2c2c;
+	color:white;
+}
+
+footer .contacto{
+	padding:5% 10%;
+	display:flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+/*--*/
+	footer .contacto .infoContacto{
+		width:50%;
+		min-width:300px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		margin:100px 0;
+	}
+		footer .contacto .textoContacto{
+			margin-bottom:60px;
+		}
+		footer .contacto .textoContacto .separado{
+			display:inline-block;
+			width:100%;
+			margin-bottom:15px;
+		}
+		
+		footer .contacto .redes{
+			height:50%;
+		}
+			/*--*/
+			footer .contacto .redes .contLinksSN img{
+				margin:2px;
+			}
+
+	footer .contacto .formularioContacto{
+		width:50%;
+		min-width:300px;
+		margin:100px 0;
+	}
+		footer .contacto .formularioContacto h4{
+			margin-bottom:15px;
+		}	
+		footer .contacto .formularioContacto p{
+			display:inline-block;
+			margin:10px 0;
+		}	
+		footer .contacto .formularioContacto form{
+			
+		}	
+		footer .contacto .formularioContacto .campo{
+			width:100%;
+		}
+		footer .contacto .formularioContacto .linea{
+			height:20px;
+		}
+
+		footer .contacto .formularioContacto textarea{
+			height:60px;
+			resize: none;
+		}
+		footer .contacto .formularioContacto .botonEnviar{
+			margin-top:10px;
+			float:right;
+			background-color: transparent;
+			color: #fff;
+			font-size:1.1em;
+			font-family: 'hk_grotesksemibold';
+			cursor: pointer;
+			border:none;
+		}
+
+	footer .contacto h4{
+		display:inline-block;
+		font-family:'hk_groteskbold';
+		margin-bottom:30px;
+		font-size:1.4em;
+	}
+
+footer .copyright{
+	height:75px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-top:1px solid #404040;
+	color:#808080;
+	font-size:0.7em;
+}
+
+/*%% Secciones - general*/
+
+section{
+	width:100%;
+}
+
+/*%% Banners - general*/
+
+.mainBanner{
+	background-color:#eee;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	font-family:'hk_grotesklight';
+}
+
+.mainBanner strong{
+	font-family:'hk_groteskmedium';
+	font-weight:normal;
+}
+
+/*%% Headings - general*/
+
+h2{
+	font-family: 'd-dinregular';
+	color:#bf9900;
+	font-size:3em;
+	font-weight:bold;
+}
+h3{
+	font-size:2em;
+	font-family:'hk_groteskbold';
+	margin-bottom:60px;
+}
+
+/*-------------INICIO*/
+
+/*%% Inicio - portada*/
+
+section.mainBanner.MBInicio{
+	background-color:rgba(black);
+	background-image:url("../img/bkg_mb_inicio.jpg");
+	background-size:cover;
+	color:white;
+}
+
+section.mainBanner .bannerTexto{
+	margin:0 19%;
+	font-size:2em;
+	line-height: 1.4em;
+	text-align:center;
+	
+}
+@media (max-width: 1000px) {
+	section.mainBanner .bannerTexto{
+	font-size:1.4em;
+	line-height: 1.4em;
+	margin-bottom:50px;
+	
+}
+}
+	
+	
+section.mainBanner .botonConocerMas{
+	font-family:'hk_grotesksemibold';
+	text-transform:uppercase;
+	background-color:rgba(255,255,255,0.25);
+	padding:15px 30px;
+	margin-top:100px;
+}
+
+section.mainBanner a:link, section.mainBanner a:visited, section.mainBanner a:hover, section.mainBanner a:active{
+	font-family:'hk_groteskbold';
+	text-transform:uppercase;
+	color:white;
+}
+
+section.mainBanner .flechaMainBanner{
+	position:absolute;
+	bottom:50px;
+	cursor:pointer;
+}
+@media (max-width: 1000px) {
+	section.mainBanner .flechaMainBanner{
+	display:none;
+}
+}
+
+/*%% Inicio - proyectos*/
+
+section.proyectos .boxProyecto{
+	display:flex;
+	box-sizing:border-box;
+	background-color:white; /*para evitar problemas con parallax.js, que mueve la imagen por debajo del siguiente elemento*/
+}
+section.proyectos .imgWrap{
+	width:50%;
+}
+	section.proyectos .imgProyecto{
+		width:100%;
+	}
+section.proyectos .textWrap{
+	width:50%;
+	box-sizing:border-box;
+	padding:3.5%;
+}
+	section.proyectos .textoProyecto{
+		box-sizing:border-box;
+		height:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+	section.proyectos .textoProyecto p{
+		font-size:1.4em;
+		line-height:1.2em;
+	}
+	
+	section.proyectos .verMas{
+		font-family:'d-dinregular';
+		color:black;
+		text-transform:uppercase;
+		font-size:0.9em;
+	}
+
+	/*apilar boxes de proyecto en modo responsive*/
+@media (max-width: 1000px) {
+	section.proyectos .textWrap{
+		width:100%;
+		min-height:300px;
+		margin: 30px 0;
+		margin-bottom: 0;
+		padding: 8%;
+		border-bottom: 1px solid #ccc;
+	}
+	section.proyectos .imgWrap{
+		display:none;
+	}
+	
+	section.proyectos .textoProyecto{
+		min-height:300px;
+	}
+}
+/*%% Inicio - patrocinio*/
+
+section.patrocinio{
+	background-color:#eee;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	min-height:500px;
+	overflow:hidden;
+}
+
+section.patrocinio p{
+	margin-bottom:105px;
+	margin-top:100px;
+	font-size:1.2em;
+	text-align:center;
+}
+section.patrocinio .logosPatrocinio{
+	display:flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom:100px;
+}
+
+section.patrocinio .wrapSingleLogo{
+
+}
+
+
+
+
+section.patrocinio .logo{
+	margin:60px 70px;
+}
+
+
+
+
+
+
+/*-------------QUIÉNES SOMOS*/
+
+/*%% Texto explicativo*/
+
+section.sobreExpOK{
+	box-sizing:border-box;
+	padding:0 10%;
+	display:flex;
+	align-items:center;
+	height:100vh;
+}
+
+@media (max-width: 1000px) {
+	section.sobreExpOK{
+		margin:80px 0;
+	}
+}
+
+.sobreExpOK__wrap-texto{
+	
+}
+
+section.sobreExpOK h2{
+	margin-bottom:50px;
+	text-transform:uppercase;
+}
+section.sobreExpOK p{
+	display:inline-block;
+	margin: 0 7%;
+	margin-bottom:15px;
+	font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+/*%% Integrantes*/
+
+section.integrantes{
+	background-color:#f5f5f5;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	font-size: 1.3em;
+}
+
+section.integrantes .titulo{
+	margin-top:80px;
+	text-align:center;
+}
+
+section.integrantes .contenedorIntegrantes{
+	max-width:1040px;
+	margin:110px auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+section.integrantes .boxIntegrante{
+	margin:0 65px;
+	text-align:center;
+}
+
+section.integrantes .boxIntegrante .nombre{
+	margin-top:35px;
+	font-weight:bold;
+}
+section.integrantes .boxIntegrante .cargo{
+	margin-bottom:65px;
+	line-height:2em;
+}
+
+/*-------------PÁGINAS DE PROYECTO*/
+
+
+
+/*%% Proyectos - banners*/
+section.MBMable{
+	background-color:#fff;
+	background-image:url('../img/bn_mable.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section.MBIntroyeccion{
+	background-color:#bbb;
+}
+section.MBMuseos{
+	background-color:#bbb;
+}
+
+section.mainBanner .logoProyecto{
+	max-width:80%;
+}
+
+/*%% Proyectos - introduccion*/
+
+section.introduccion{
+	min-height: 100vh;
+    margin: 50px 0;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding: 15%;
+    box-sizing: border-box;
+}
+
+section.introduccion h2{
+	margin-top:-55px; /*compensar altura de header, la sección mide 100vh*/
+	margin-bottom:40px;
+}
+
+section.introduccion .cuerpoIntro{
+	max-width:980px;
+}
+section.introduccion .cuerpoIntro p{
+	font-size:1.4em;
+	display:inline-block;
+	margin-bottom:20px;
+	line-height: 1.5em;
+}
+
+
+/*%% Proyectos - videopitch*/
+
+section.videopitch{
+	height:100vh;
+	background-color:#333;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+
+
+/*%% Proyectos - contenido*/
+
+section.contenido{
+	background-color:#f5f5f5;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	min-height:100vh;
+}
+
+section.contenido .areaTexto{
+	width:40%;
+	min-width:300px;
+	height:80%;
+	/* border:1px solid red; */
+	box-sizing:border-box;
+	padding:30px;
+	color:#444;
+}
+section.contenido .areaTexto p{
+	margin-bottom:50px;
+	font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+section.contenido .wrapImagenes{
+	width:40%;
+	min-width:300px;
+	height:80%;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+section.contenido .contImg{
+	width:100%;
+}
+section.contenido .contImg img{
+	width:100%;
+}
+
+section.contenido .verGaleria{
+	width: 250px;
+    padding: 5%;
+	box-sizing:border-box;
+	height:75px;
+	border:1px solid black;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	cursor:pointer;
+	margin: 80px 0;
+	font-size:1.4em;
+}
+
+
+/*reacomodar columnas por debajo de los 1000px*/
+@media (max-width: 1000px) {
+	section.contenido .contImg img{
+		display:none;
+	}
+	section.contenido .areaTexto{
+		width:100%;
+		padding: 10%;
+	}
+	section.contenido .wrapImagenes{
+		width:100%;
+	}
+}
+
+
+/*%% Proyectos - galeria*/
+
+.wrapGaleria{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:none;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.galeriaImagenes{
+	position:relative;
+	width:80vw;
+	height:80vh;
+	margin: 10vh 10vw;
+	box-sizing:border-box;
+	padding:80px 40px;
+	background-color:rgba(255,255,255,0.9);
+	z-index:1;
+	display:none; /*necesario para que no bloquee clicks a elementos por debajo*/
+	opacity:0;/*necesario para animar*/
+	justify-content:center;
+	overflow-y:scroll;
+}
+
+.contenedorThumbnails{
+	width:90%;
+	display:flex;
+	flex-wrap:wrap;
+	align-content:flex-start;
+	justify-content:center;
+}
+
+.thumbnail{
+	margin:5px;
+}
+
+.cruz{
+	border:none;
+	background:none;
+	position:absolute;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+}
