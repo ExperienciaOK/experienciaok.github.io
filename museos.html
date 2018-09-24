@@ -5,76 +5,108 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Museo OK</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/featherlight.gallery.min.css">
+	<link rel="stylesheet" href="css/featherlight.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.paroller.min.js"></script>
+	<script src="js/featherlight.min.js"></script>
+	<script src="js/featherlight.gallery.min.js"></script>
 	<script src="js/funciones.js"></script>
 	</head>
 	<body class="pagProyecto pagMuseos">
 	
 <!-- Header (presente en todas las páginas) -->
-		<header>
-			<a href="index.html"><img class="logoMain" src="img/logo_experienciaok.png"/></a>
-			<nav class="mainNav">
-				<ul class="mainNavLinks">
-					<a href="index.html"><li class="mainNavItem">Inicio</li></a>
-					<a href="quienes-somos.html"><li class="mainNavItem">Quiénes somos</li></a>
-					<li class="mainNavItem itemProyectos">
-					Proyectos
-					<ul class="mainNavSublinks">
-						<a href="mable.html" class="mainNavSubitem"><li>MAble</li></a>
-						<a href="introyeccion.html" class="mainNavSubitem"><li>Introyección</li></a>
-						<a href="museos.html" class="mainNavSubitem"><li>Museo OK</li></a>
-					</ul>
+
+
+	<header>
+	
+			<div class="c-RM c-RM--desktop">
+			<div class="c-RM__logo-wrap">
+				<a href="index.html"><img class="c-RM__logo" src="img/logo_experienciaok.png" /></a>
+			</div>
+			<input type="checkbox" id="c-RM__menu-toggle"/>
+			
+			<nav class="c-RM__mainNav">
+				<ul class="c-RM__l-menu">
+					<li class="c-RM__l-menu-item"><a href="index.html">Inicio</a></li>
+					<li class="c-RM__l-menu-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+					<li class="c-RM__l-menu-item c-RM__l-menu-item--active">
+						<a href="#">Proyectos</a>
+						<ul class="c-RM__l-submenu">
+							<li class="c-RM__l-submenu-item"><a href="mable.html">MAble</a></li>
+							<li class="c-RM__l-submenu-item"><a href="introyeccion.html">Introyección</a></li>
+							<li class="c-RM__l-submenu-item c-RM__l-menu-item--responsive-active"><a href="museos.html">Museo OK</a></li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
-		</header>
+			
+			<button class="c-RM__mobile-btn">
+			<label for="c-RM__menu-toggle">
+				<img src="img/menu_icon.svg"/>
+			</label>
+			</button>
+
+		</div>
+	
+	</header>
+
+		
 <!-- -->
 
-		<section class="mainBanner MBMuseos"> <!-- El background en sí mismo se puede animar con Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp -->
-			<img class="logoMable" src=""/>
+		<section class="mainBanner MBMuseos">
+			<h1>Museo OK</h1>
 			<div class="bannerTexto">
-				<p><strong>Asistente electrónico sonoro</strong> para museos y galerías inclusivas</p>
+				<p><strong>Previsualización de exhibiciones</strong> en realidad virtual</p>
 			</div>
 			<img class="flechaMainBanner" src="img/flecha.png"/>
 		</section>
 		
 		<section class="introduccion">
-			<h2>Para museos más amables y portables</h2>
-			<p><strong>MAble</strong> es un dispositivo electrónico de tamaño pequeño que favorece la inclusión del público general, ciegos y personas de la tercera edad a los museos de arte, historia, ciencias o cualquier otro tipo. El dispositivo se activa con la simple acción de apoyar un llavero sobre el dispositivo, de modo que el mismo proveerá información sonora al público, de las obras de arte y/o elementos históricos, ubicados frente a ellos.</p>
-			<p>Cada uno de los mismos estará ubicado en lugares estratégicos y fácilmente accesibles, tanto visualmente como físicamente, y la adquisición del llavero se solicita al ingresra al establecimiento.</p>
-			<p>Nuestro objetivo de interacción es que sea inclusivo e intuitivo, teniendo en cuenta tanto al público en general, como las personas de tercera edad, y ciegos.</p>
-			<div class="videopitch">
-				<iframe src="https://player.vimeo.com/video/147170777?portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<h2>Facilitando el diseño de exhibiciones</h2>
+			<div class="cuerpoIntro">
+				<p><strong>Museo OK</strong> es un servicio que propone previsualizaciones de exhibiciones en realidad virtual, las cuales permiten recrear la experiencia física del futuro visitante en una etapa previa al montaje, facilitando la toma de decisiones curatoriales.</p>
+				<p>A través de diversas técnicas tales como fotografía, fotogrametría, escaneo y modelado 3D se digitalizan los diversos elementos a exhibir, y se disponen en una recreación virtual del espacio de exhibición, realizada a partir de planos bidimensionales.</p>
+				<p>Tras el trabajo de nuestro equipo, se brinda una app personalizada para el museo, descargable desde la Play Store, y un video virtual 360 en la plataforma vimeo.com, para recorrer el museo virtualmente. Las personas encargadas de la muestra solamente requieren de un celular con giroscopio, un headset para realidad virtual y un joystick inalámbrico.</p>
 			</div>
+		</section>
+		
+		<section class="videopitch">
+			<iframe src="https://player.vimeo.com/video/272247788?portrait=0" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</section>
 		
 		<section class="contenido">
 			<div class="areaTexto">
-				<h3>¿Por qué surge?</h3>
+				<h3>Sobre el proyecto</h3>
 				<p>Como lo dicta la ley argentina, el acceso a la cultura tiene que ser universal y hoy los museos y galerías, sobre todos los museos que pertenecen al Ministerio de la Cultura, no cumplen estos requisitos, discriminando principalmente a ciegos, ancianos y al público en general. Por ejemplo: No tocar los elementos de exhibición limita a los ciegos. El código QR para informar sobre los elementos exhibidos, resulta no intuitivo, excluye a los ciegos y la gran mayoría de las personas de tercera edad. Finalmente, las audioguías son elementos de mayor precios que el nuestro, con una lista interminable de audios que confunde más que clarificar.</p>
 				<p>También, hay una inaccesibilidad para el público en general al arte, que nuestra experiencia profesional nos provee para afirmarlo. No siempre hay guías disponibles para orientar, lo que ha promovido dichos como “un cuadro abstracto son simples manchas” o “una montaña de basura es una escultura”. Este tipo de comentarios están establecidos como una afirmación absoluta en la mayoría de la sociedad y buscamos revertir este efecto, con simples ayudas sonoras, buscamos ayudar a la imaginación.</p>
 			</div>
 			<div class="wrapImagenes"> <!-- Ventana de recorte -->
-				<div class="contenedorImagenes"> <!-- Tira -->
-					<div class="imagenes">
-						<div class="wrapImagen wimg1">
-							<img class="img1" src="img/im_mable-1.jpg"/>
-						</div>
-						<div class="wrapImagen wimg2">
-							<img class="img2" src="img/im_mable-2.jpg"/>
-						</div>
-						<div class="wrapImagen wimg3">
-							<img class="img3" src="img/im_mable-3.jpg"/>
-						</div>
-						<div class="verGaleria">
-							<p>Ver galería de imágenes</p>
-						</div>
+					<div class="contImg">
+						<img class="img1" src="img/im_museos-1.jpg"/>
+					</div>
+					<div class="verGaleria">
+						<p>Ver galería de imágenes</p>
+					</div>
+			</div>
+			<div class="wrapGaleria">
+				<div class="galeriaImagenes" data-featherlight-gallery data-featherlight-filter="a">
+					<!-- Este contenido se genera dinámicamente -->
+					<button class="featherlight-close-icon featherlight-close cruz" aria-label="Close">✕</button>
+					<div class="contenedorThumbnails">
+						<a class="thumbnail" href="img/gal_museos-1.jpg"><img src="img/th_museos-1.jpg"></a>
+						<a class="thumbnail" href="img/gal_museos-2.jpg"><img src="img/th_museos-2.jpg"></a>
+						<a class="thumbnail" href="img/gal_museos-3.jpg"><img src="img/th_museos-3.jpg"></a>
+						<a class="thumbnail" href="img/gal_museos-4.jpg"><img src="img/th_museos-4.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-5.jpg"><img src="img/th_museos-5.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-6.jpg"><img src="img/th_museos-6.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-7.jpg"><img src="img/th_museos-7.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-8.jpg"><img src="img/th_museos-8.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-9.jpg"><img src="img/th_museos-9.jpg"></a>				
+						<a class="thumbnail" href="img/gal_museos-10.jpg"><img src="img/th_museos-10.jpg"></a>			
 					</div>
 				</div>
-			</div>
-			<div class="galeriaImagenes">
-				<!-- Este contenido se genera dinámicamente -->
 			</div>
 		</section>
 
@@ -84,28 +116,32 @@
 			<div class="contacto">
 				<div class="infoContacto">
 					<div class="textoContacto">
-						<h3>Contacto:</h3>
-						<p>experienciaok@gmail.com</p>
-						<p>+54 911 57802653</p>
-						<p>horarios de atención: 9:00 - 18:00 hs</p>
+						<h4>Contacto:</h4>
+						<p class="separado">experienciaok@gmail.com</p>
+						<p class="separado">+54 911 57802653</p>
+						<p>horarios de atención:</p>
+						<p>9:00 - 18:00 hs</p>
+						
 					</div>
 					<div class="redes">
-						<h3>Seguinos en:</h3>
-						<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
-						<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
-						<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						<h4>Seguinos en:</h4>
+						<div class="contLinksSN">
+							<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
+							<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
+							<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						</div>
 					</div>
 				</div>
 				<div class="formularioContacto">
-					<h3>Enviá tu consulta:</h3>
+					<h4>Enviá tu consulta:</h4>
 					<form>
 						<p>Mail:</p>
-						<input type="text" name="mail">
+						<input type="text" name="mail" class="campo linea">
 						<p>Asunto:</p>
-						<input type="text" name="asunto">
+						<input type="text" name="asunto" class="campo linea">
 						<p>Mensaje:</p>
-						<textarea name="subject"></textarea>
-						<input type="submit" value="Enviar">
+						<textarea name="subject" class="campo"></textarea>
+						<input class="botonEnviar" type="submit" value="Enviar">
 					</form>
 				</div>
 			</div>

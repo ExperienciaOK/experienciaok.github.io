@@ -5,77 +5,108 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Introyección</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/featherlight.gallery.min.css">
+	<link rel="stylesheet" href="css/featherlight.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.paroller.min.js"></script>
+	<script src="js/featherlight.min.js"></script>
+	<script src="js/featherlight.gallery.min.js"></script>
 	<script src="js/funciones.js"></script>
 	</head>
-	<body class="pagProyecto pagIntro">
+	<body class="pagProyecto pagIntroyeccion">
 	
 <!-- Header (presente en todas las páginas) -->
-		<header>
-			<a href="index.html"><img class="logoMain" src="img/logo_experienciaok.png"/></a>
-			<nav class="mainNav">
-				<ul class="mainNavLinks">
-					<a href="index.html"><li class="mainNavItem">Inicio</li></a>
-					<a href="quienes-somos.html"><li class="mainNavItem">Quiénes somos</li></a>
-					<li class="mainNavItem itemProyectos">
-					Proyectos
-					<ul class="mainNavSublinks">
-						<a href="mable.html" class="mainNavSubitem"><li>MAble</li></a>
-						<a href="introyeccion.html" class="mainNavSubitem"><li>Introyección</li></a>
-						<a href="museos.html" class="mainNavSubitem"><li>Museo OK</li></a>
-					</ul>
+
+
+	<header>
+	
+			<div class="c-RM c-RM--desktop">
+			<div class="c-RM__logo-wrap">
+				<a href="index.html"><img class="c-RM__logo" src="img/logo_experienciaok.png" /></a>
+			</div>
+			<input type="checkbox" id="c-RM__menu-toggle"/>
+			
+			<nav class="c-RM__mainNav">
+				<ul class="c-RM__l-menu">
+					<li class="c-RM__l-menu-item"><a href="index.html">Inicio</a></li>
+					<li class="c-RM__l-menu-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+					<li class="c-RM__l-menu-item c-RM__l-menu-item--active">
+						<a href="#">Proyectos</a>
+						<ul class="c-RM__l-submenu">
+							<li class="c-RM__l-submenu-item"><a href="mable.html">MAble</a></li>
+							<li class="c-RM__l-submenu-item c-RM__l-menu-item--responsive-active"><a href="introyeccion.html">Introyección</a></li>
+							<li class="c-RM__l-submenu-item"><a href="museos.html">Museo OK</a></li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
-		</header>
+			
+			<button class="c-RM__mobile-btn">
+			<label for="c-RM__menu-toggle">
+				<img src="img/menu_icon.svg"/>
+			</label>
+			</button>
+
+		</div>
+	
+	</header>
+
 		
 <!-- -->
 
 		<section class="mainBanner MBIntroyeccion"> <!-- El background en sí mismo se puede animar con Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp -->
-			<img class="logoMable" src=""/>
+			<h1>Introyección</h1>
 			<div class="bannerTexto">
-				<p><strong>Asistente electrónico sonoro</strong> para museos y galerías inclusivas</p>
+				<p><strong>Obra de arte contemporáneo</strong> con realidad virtual</p>
 			</div>
 			<img class="flechaMainBanner" src="img/flecha.png"/>
 		</section>
 		
 		<section class="introduccion">
-			<h2>Para museos más amables y portables</h2>
-			<p><strong>MAble</strong> es un dispositivo electrónico de tamaño pequeño que favorece la inclusión del público general, ciegos y personas de la tercera edad a los museos de arte, historia, ciencias o cualquier otro tipo. El dispositivo se activa con la simple acción de apoyar un llavero sobre el dispositivo, de modo que el mismo proveerá información sonora al público, de las obras de arte y/o elementos históricos, ubicados frente a ellos.</p>
-			<p>Cada uno de los mismos estará ubicado en lugares estratégicos y fácilmente accesibles, tanto visualmente como físicamente, y la adquisición del llavero se solicita al ingresra al establecimiento.</p>
-			<p>Nuestro objetivo de interacción es que sea inclusivo e intuitivo, teniendo en cuenta tanto al público en general, como las personas de tercera edad, y ciegos.</p>
-			<div class="videopitch">
-				<iframe src="https://player.vimeo.com/video/147170777?portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<h2>Retornar a la niñez</h2>
+			<div class="cuerpoIntro">
+				<p><strong>Introyección</strong> es una instalación interactiva de realidad virtual, compuesta por un sillón colgante que posibilita tanto girar 360º como balancearse y lentes de realidad virtual, a través de la cual se puede explorar un escenario virtual de naturaleza amena, con estética infantil y elementos surreales que gravitan y habitan el mismo.</p>
+				<p>Nuestro objetivo principal se enmarca en un proyecto de investigación, sobre el concepto de la relajación, uniendo la técnica de mindfulness de la psicoterapia, el videojuego y la hipótesis de que hamacarnos es una técnica internalizada, que nos posibilita una dinámica intuitiva individual o relacional con el dispositivo mecánico, que a su vez, activa el electrónico.</p>
 			</div>
+		</section>
+		
+		<section class="videopitch">
+			<iframe src="https://player.vimeo.com/video/291413457?portrait=0" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</section>
 		
 		<section class="contenido">
 			<div class="areaTexto">
-				<h3>¿Por qué surge?</h3>
-				<p>Como lo dicta la ley argentina, el acceso a la cultura tiene que ser universal y hoy los museos y galerías, sobre todos los museos que pertenecen al Ministerio de la Cultura, no cumplen estos requisitos, discriminando principalmente a ciegos, ancianos y al público en general. Por ejemplo: No tocar los elementos de exhibición limita a los ciegos. El código QR para informar sobre los elementos exhibidos, resulta no intuitivo, excluye a los ciegos y la gran mayoría de las personas de tercera edad. Finalmente, las audioguías son elementos de mayor precios que el nuestro, con una lista interminable de audios que confunde más que clarificar.</p>
-				<p>También, hay una inaccesibilidad para el público en general al arte, que nuestra experiencia profesional nos provee para afirmarlo. No siempre hay guías disponibles para orientar, lo que ha promovido dichos como “un cuadro abstracto son simples manchas” o “una montaña de basura es una escultura”. Este tipo de comentarios están establecidos como una afirmación absoluta en la mayoría de la sociedad y buscamos revertir este efecto, con simples ayudas sonoras, buscamos ayudar a la imaginación.</p>
+				<h3>Marco de la obra</h3>
+				<p>Tras sentarse, equiparse con los lentes de realidad virutal y generar la acción de hamacarse,  el usuario interactúa con la gravedad, elevándose del suelo en dirección vertical, atravesando las nubes hasta llegar al universo y visualizar la tierra; en un escenario virtual de naturaleza amena, con estética infantil y elementos surreales que gravitan y habitan el mismo.</p>
+				<p>Para Marcuse, un reconocido filósofo y sociólogo, la introyección implica “la existencia de una dimensión interior separada a las exigencias externas"; la obra crea así, una realidad solo perceptible para el usuario, que lo libera por un momento de la realidad cotidiana y lo transporta a una experiencia vivenciada, rememorando la niñez y el imaginario colectivo que relaciona volar con libertad.</p>
+				<p>Berger y Luckmann exponen en el texto "La sociedad como realidad subjetiva" que la internalización es una socialización primaria ligada a la niñez, que se desarrolla con una enorme carga emocional, donde se produce la identificación y como bien se desarrolla en el nuevo paradigma de la biología, ninguna especie puede analizarse a fondo fuera de su ambiente natural; de modo que nuestra relación con el espacio es clave para nuestro desarrollo de la realidad objetiva. Después las normas nos enseñaran que no podemos volar por sí solos.</p>
+				<p>En esta lucha del monopolio de las nuevas didácticas de la juventud, rememoramos lo tradicional y la cultura popular, el parque de barrio, el salir a jugar y la imaginación de la niñez, espacio colonizado por la pantalla digital. En contramano, sabemos que "Introyección" es una estrategia de ilusión, una paradoja que pretende un retorno virtual, pero como bien Marcuse expone: “el hombre está inmerso en una sociedad, en la cual, aquello que produce es al mismo tiempo contraproducente para su persona”; pero románticamente, nos apela a una experiencia aumentada ya vivenciada, aunque sea virtual de un momento alejado de lo comercial.</p>
 			</div>
 			<div class="wrapImagenes"> <!-- Ventana de recorte -->
-				<div class="contenedorImagenes"> <!-- Tira -->
-					<div class="imagenes">
-						<div class="wrapImagen wimg1">
-							<img class="img1" src="img/im_mable-1.jpg"/>
-						</div>
-						<div class="wrapImagen wimg2">
-							<img class="img2" src="img/im_mable-2.jpg"/>
-						</div>
-						<div class="wrapImagen wimg3">
-							<img class="img3" src="img/im_mable-3.jpg"/>
-						</div>
-						<div class="verGaleria">
-							<p>Ver galería de imágenes</p>
-						</div>
+					<div class="contImg">
+						<img class="img1" src="img/im_introyeccion-1.jpg"/>
+					</div>
+					<div class="verGaleria">
+						<p>Ver galería de imágenes</p>
+					</div>
+			</div>
+			<div class="wrapGaleria">
+				<div class="galeriaImagenes" data-featherlight-gallery data-featherlight-filter="a">
+					<!-- Este contenido se genera dinámicamente -->
+					<button class="featherlight-close-icon featherlight-close cruz" aria-label="Close">✕</button>
+					<div class="contenedorThumbnails">
+						<a class="thumbnail" href="img/gal_introyeccion-1.jpg"><img src="img/th_introyeccion-1.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-2.jpg"><img src="img/th_introyeccion-2.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-3.jpg"><img src="img/th_introyeccion-3.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-4.jpg"><img src="img/th_introyeccion-4.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-5.jpg"><img src="img/th_introyeccion-5.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-6.jpg"><img src="img/th_introyeccion-6.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-7.jpg"><img src="img/th_introyeccion-7.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-8.jpg"><img src="img/th_introyeccion-8.jpg"></a>			
+						<a class="thumbnail" href="img/gal_introyeccion-9.jpg"><img src="img/th_introyeccion-9.jpg"></a>			
 					</div>
 				</div>
-			</div>
-			<div class="galeriaImagenes">
-				<!-- Este contenido se genera dinámicamente -->
 			</div>
 		</section>
 
@@ -85,28 +116,32 @@
 			<div class="contacto">
 				<div class="infoContacto">
 					<div class="textoContacto">
-						<h3>Contacto:</h3>
-						<p>experienciaok@gmail.com</p>
-						<p>+54 911 57802653</p>
-						<p>horarios de atención: 9:00 - 18:00 hs</p>
+						<h4>Contacto:</h4>
+						<p class="separado">experienciaok@gmail.com</p>
+						<p class="separado">+54 911 57802653</p>
+						<p>horarios de atención:</p>
+						<p>9:00 - 18:00 hs</p>
+						
 					</div>
 					<div class="redes">
-						<h3>Seguinos en:</h3>
-						<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
-						<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
-						<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						<h4>Seguinos en:</h4>
+						<div class="contLinksSN">
+							<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
+							<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
+							<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
+						</div>
 					</div>
 				</div>
 				<div class="formularioContacto">
-					<h3>Enviá tu consulta:</h3>
+					<h4>Enviá tu consulta:</h4>
 					<form>
 						<p>Mail:</p>
-						<input type="text" name="mail">
+						<input type="text" name="mail" class="campo linea">
 						<p>Asunto:</p>
-						<input type="text" name="asunto">
+						<input type="text" name="asunto" class="campo linea">
 						<p>Mensaje:</p>
-						<textarea name="subject"></textarea>
-						<input type="submit" value="Enviar">
+						<textarea name="subject" class="campo"></textarea>
+						<input class="botonEnviar" type="submit" value="Enviar">
 					</form>
 				</div>
 			</div>
