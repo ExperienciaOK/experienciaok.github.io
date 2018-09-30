@@ -110,6 +110,12 @@ h1{
     margin-bottom: 50px;
 	font-family: 'd-dinregular';
 }
+@media(max-width:600px){
+	h1{
+		font-size: 3em;
+	}	
+}
+
 
 
 /*%% Links*/
@@ -298,15 +304,16 @@ footer .contacto{
 }
 /*--*/
 	footer .contacto .infoContacto{
-		width:50%;
-		min-width:300px;
+		width:100%;
 		display:flex;
-		flex-direction:column;
-		justify-content:space-between;
+		flex-wrap:wrap;
+		justify-content:center;
 		margin:100px 0;
 	}
 		footer .contacto .textoContacto{
+			width:50%;
 			margin-bottom:60px;
+			min-width:300px;
 		}
 		footer .contacto .textoContacto .separado{
 			display:inline-block;
@@ -315,49 +322,14 @@ footer .contacto{
 		}
 		
 		footer .contacto .redes{
+			width:50%;
+			min-width:300px;
 			height:50%;
 		}
 			/*--*/
 			footer .contacto .redes .contLinksSN img{
 				margin:2px;
 			}
-
-	footer .contacto .formularioContacto{
-		width:50%;
-		min-width:300px;
-		margin:100px 0;
-	}
-		footer .contacto .formularioContacto h4{
-			margin-bottom:15px;
-		}	
-		footer .contacto .formularioContacto p{
-			display:inline-block;
-			margin:10px 0;
-		}	
-		footer .contacto .formularioContacto form{
-			
-		}	
-		footer .contacto .formularioContacto .campo{
-			width:100%;
-		}
-		footer .contacto .formularioContacto .linea{
-			height:20px;
-		}
-
-		footer .contacto .formularioContacto textarea{
-			height:60px;
-			resize: none;
-		}
-		footer .contacto .formularioContacto .botonEnviar{
-			margin-top:10px;
-			float:right;
-			background-color: transparent;
-			color: #fff;
-			font-size:1.1em;
-			font-family: 'hk_grotesksemibold';
-			cursor: pointer;
-			border:none;
-		}
 
 	footer .contacto h4{
 		display:inline-block;
@@ -645,18 +617,28 @@ section.MBMable{
 	background-image:url('../img/bn_mable.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 section.MBIntroyeccion{
 	background-color:#fff;
 	background-image:url('../img/bn_introyeccion.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 section.MBMuseos{
 	background-color:#fff;
 	background-image:url('../img/bn_museos.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+}
+section.MBHamacame{
+	background-color:#fff;
+	background-image:url('../img/bn_hamacame.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 section.mainBanner .logoProyecto{
