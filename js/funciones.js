@@ -30,7 +30,7 @@ document.ready:
 
 //------------- MODULO: MENU RESPONSIVE -------------------------
 
-const anchoResponsive = 700; //en pixeles
+const anchoResponsive = 1200; //en pixeles
 
 //------------- MODULO: MENU RESPONSIVE -------------------------
 
@@ -101,7 +101,7 @@ $(document).ready(function() {
 	
 //%% Autoscroll flecha banner
 
-	$('.flechaMainBanner').click(function(){
+	$('.flechaMainBanner, .botonConocerMas').click(function(){
 		$('html, body').animate({scrollTop: $('.mainBanner').next().offset().top-55},1000); //desplazar a pos. top de sección sig. a banner, menos el alto del header
 	});
 	
