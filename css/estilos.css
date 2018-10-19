@@ -140,9 +140,10 @@ a {
 }
 
 .c-RM a:link, .c-RM a:visited, .c-RM a:hover,.c-RM a:active{
-	font-family:'d-dinregular';
-	font-size: 1em;
+	font-family:'hk_groteskmedium';
+	font-size: 0.85em;
 	color:white;
+	text-transform:uppercase;
 }
 
 .c-RM .c-RM__logo-wrap{
@@ -152,6 +153,7 @@ a {
 }
 .c-RM .c-RM__logo{
 	width:100%;
+	min-width:200px;
 }
 
 .c-RM #c-RM__menu-toggle{
@@ -161,14 +163,13 @@ a {
 .c-RM .c-RM__l-menu a{ /*todos los links del menú*/
 	display:block;
 	padding:30px 0;
-	padding-left:12px;
 	background-color:black;
+	text-align:center;
 }
 
 .c-RM .c-RM__l-submenu a{ /*links del submenu*/
 	display:block;
 	padding:15px 0;
-	padding-left:12px;
 	background-color:black;
 }
 
@@ -199,11 +200,12 @@ a {
 /* ------ Menú principal*/
 .c-RM--desktop .c-RM__l-menu{
 	display:flex;
+	flex-wrap:wrap;
 }
 
 /* ------ Items*/
 .c-RM--desktop .c-RM__l-menu-item{
-	width:130px;
+	width:140px;
 }
 
 /* ------ Submenú*/
@@ -228,8 +230,8 @@ a {
 
 /*Ver comentarios al final del módulo sobre la clase --active*/
 
-.c-RM--desktop .c-RM__l-menu-item--active{
-	border-bottom:2px solid white;
+.c-RM--desktop .c-RM__l-menu-item--active > a{
+	font-family:'hk_groteskbold';
 }
 
 
@@ -275,9 +277,7 @@ https://codepen.io/Sfate/pen/nLBGr*/
 	background-color:black;
 }
 
-.c-RM--mobile .c-RM__l-submenu-item{
-	padding-left:22px;
-}
+
 
 /* ------ Opción activa del submenú*/
 /*hay dos clases diferentes: --active y --responsive-active. La primera solo actúa en el modo de escritorio, y está pensada para el menú principal (sin considerar el menu desplegable, en el cual no se marca la navegación de ninguna manera); la segunda solo actúa en responsive y se puede aplicar también al submenú (es la única clase a aplicar en el submenú). Si la página activa es de primer nivel (ej: Inicio), ese item va a tener las dos clases.*/
@@ -308,7 +308,7 @@ footer .contacto{
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:center;
-		margin:100px 0;
+		margin:0;
 	}
 		footer .contacto .textoContacto{
 			width:50%;
@@ -392,18 +392,28 @@ h3{
 
 section.mainBanner.MBInicio{
 	background-color:rgba(black);
-	background-image:url("../img/bkg_mb_inicio.jpg");
+	background-image:url("../img/bn_hamacame.jpg");
 	background-size:cover;
-	color:white;
+	color:black;
 }
 
 section.mainBanner .bannerTexto{
 	margin:0 19%;
-	font-size:2em;
+	max-width:700px;
 	line-height: 1.4em;
 	text-align:center;
-	
+	font-size:2em;
 }
+section.mainBanner .bannerTexto .grande{
+	font-family:'hk_groteskbold';
+	text-transform:uppercase;
+	font-size:1.15em;
+}
+section.mainBanner .bannerTexto .chico{
+	font-family:'hk_groteskmedium';
+	font-size:0.6em;
+}
+
 @media (max-width: 1000px) {
 	section.mainBanner .bannerTexto{
 	font-size:1.4em;
@@ -417,9 +427,10 @@ section.mainBanner .bannerTexto{
 section.mainBanner .botonConocerMas{
 	font-family:'hk_grotesksemibold';
 	text-transform:uppercase;
-	background-color:rgba(255,255,255,0.25);
 	padding:15px 30px;
 	margin-top:100px;
+	cursor:pointer;
+	border:1px solid black;
 }
 
 section.mainBanner a:link, section.mainBanner a:visited, section.mainBanner a:hover, section.mainBanner a:active{
