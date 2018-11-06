@@ -56,6 +56,8 @@
 					font-size:2.8em;
 					padding:0 10%;
 					font-weight:bold;
+					line-height:1.3em;
+					text-transform:uppercase;
 				}
 		
 		p.small{
@@ -248,7 +250,7 @@
 		}
 		
 		.overlayBgVideo .contenido p{
-			max-width:800px;
+			max-width:600px;
 			margin:0 auto;
 		}
 
