@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -6,139 +5,124 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Experiencia OK</title>
 	<meta name="description" content="Realidad virtual para terapias inmersivas">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/pgwmenu.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.paroller.min.js"></script>
+	<script src="js/pgwmenu.js"></script>
 	<script src="js/funciones.js"></script>
 	</head>
-	<body class="pagInicio">
-	<!-- ------------------ INICIO MENU RESPONSIVE ------------------ -->
+	<body>
 	
-	<header>
-	
-			<div class="c-RM c-RM--desktop">
-			<div class="c-RM__logo-wrap">
-				<a href="index.html"><img class="c-RM__logo" src="img/logo_experienciaok.png" /></a>
-			</div>
-			<input type="checkbox" id="c-RM__menu-toggle"/>
-			
-			<nav class="c-RM__mainNav">
-				<ul class="c-RM__l-menu">
-					<li class="c-RM__l-menu-item c-RM__l-menu-item--active c-RM__l-menu-item--responsive-active"><a href="index.html">Inicio</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Cómo funciona</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Hardware</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Plataforma</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Objetivos</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Productos</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Media</a></li>
-					<li class="c-RM__l-menu-item"><a href="#">Conocenos</a></li>
-
+		<header>
+			<nav class="mainNav mainNav--negro">
+				<a href="#home" class="mainNav__logo"><img src="img/logo_experienciaok.png"/></a>
+				<ul class="mainNav__menu pgwMenu">
+					<li class="mainNav__item"><a href="#queHacemos">¿Qué hacemos?</a></li>
+					<li class="mainNav__item"><a href="#beneficios">Beneficios</a></li>
+					<li class="mainNav__item"><a href="#comoFunciona">Cómo funciona</a></li>
+					<li class="mainNav__item"><a href="equipo.html">Equipo</a></li>
+					<li class="mainNav__item"><a href="#info">Contacto</a></li>
 				</ul>
 			</nav>
-			
-			<button class="c-RM__mobile-btn">
-			<label for="c-RM__menu-toggle">
-				<img src="img/menu_icon.svg"/>
-			</label>
-			</button>
-
-		</div>
-	
-	</header>
-	<!-- ------------------ FIN MENU RESPONSIVE ------------------ -->
-
-		<section class="mainBanner MBInicio" data-paroller-factor="0.5" data-paroller-type="background"> <!-- El background en sí mismo se puede animar con Parallax: https://www.w3schools.com/howto/howto_css_parallax.asp -->
-			<div class="bannerTexto">
-				<p class="grande">Donde realidad virtual, juego y terapia se encuentran</p>
-				<p class="chico">Expandiendo tus sentidos</p>
-			</div>
-				<div class="botonConocerMas">
-					<p>Conocer más</p>
-				</div>
-
-		</section>
+		</header>
 		
-		<section class="proyectos">
-			<div class="boxProyecto boxHamacame">
-				<div class="imgWrap">
-					<img class="imgProyecto" alt="Introyección" src="img/ip_hamacame.jpg"/>
-				</div>
-				<div class="textWrap">
-					<div class="textoProyecto">
-						<h2>Hamacame</h2>
-						<p><strong>Videojuego de realidad virtual</strong> para terapia inmersiva, basada en técnicas de mindfulness.</p>
-						<a href="hamacame.html" class="verMas">Ver más</a>
-					</div>
+		<section id="home" class="fullHeight itemMenu">					<!-- full height, sin márgenes -->
+			<video autoplay muted loop class="fullScreenVideo">
+			  <source src="video/hamacame_web_v1.mp4" type="video/mp4">
+			</video>
+			<div class="overlayBgVideo">
+				<div class="contenido"> <!-- Esto va centrado en el overlay -->
+					<p>Donde realidad virtual, juego y terapia se encuentran</p> <!-- Esto tiene un layout propio -->
+					<button class="conocerMas">Conocer más</button>
 				</div>
 			</div>
-			<div class="boxProyecto boxIntro">
-				<div class="textWrap">
-					<div class="textoProyecto">
-						<h2>Introyección</h2>
-						<p><strong>Obra de arte contemporáneo</strong> con tecnología, compuesta por un sillón colgante fabricado con barrotes, similar a una pajarera colgante, con lentes de realidad virtual en su interior.</p>
-						<a href="introyeccion.html" class="verMas">Ver más</a>
+		</section>
+		<section id="queHacemos" class="fullHeight margins itemMenu">	<!-- full height, con márgenes. itemMenu: dispara clase "active" en su item correspondiente del menú -->
+			<h2>¿Qué hacemos?</h2>
+			<div class="contenedorTexto variante1">
+				<p>Ofrecemos experiencias terapéuticas inmersivas con realidad virtual, combinando acciones corporales con juegos entretenidos, con el objetivo de contribuir al bienestar en el lugar de trabajo y reforzar el trabajo del personal de recursos humanos.</p>
+				<p>Nos dedicamos a explorar las maneras de vincular estas tecnologías a la salud mental desde la prevención o la complementación del tratamiento para diversos trastornos, tales como ansiedad, estrés o determinadas fobias.</p>
+			</div>
+		</section>
+		<section id="beneficios" class="fullHeight margins itemMenu">	<!-- full height, con márgenes -->
+			<h2>Beneficios</h2>
+			<div class="contenedorTexto variante2">
+				<p>
+				Varios estudios sobre la realidad virtual aplicada al ámbito terapéutico demuestran que esta tecnología se puede adaptar con éxito a la prevención del estrés y la ansiedad, a través de la inmersión virtual en un ámbito relajante y ajeno al entorno cotidiano; asimismo, diversas iniciativas en esta línea han logrado volver más amenos ciertos tratamientos clínicos que resultan invasivos para el paciente.</p>
+				<p>Desde Experiencia OK utilizamos este potencial para la prevención, atendiendo a los efectos de la ansiedad y el estrés evitando el posterior desarrollo de trastornos que afecten de forma más severa a la salud.</p>
+			</div>
+		</section>
+		<section id="comoFunciona" class="itemMenu">								<!-- adaptable, sin márgenes -->
+			<div class="grillaCuadros">
+				<div class="grillaCuadros__item">
+					<div class="grillaCuadros__cuadro grillaCuadros__foto grillaCuadros__img1 grillaCuadros__izq"></div>
+					<div class="grillaCuadros__cuadro grillaCuadros__texto grillaCuadros__der">
+						<h2>Interfaz intuitiva</h2>
+						<p class="parrafo">A través del desarrollo de una interfaz intuitiva basada en el hamacado como medio de interacción con el mundo virtual, proveemos una experiencia que no requiere de aprendizaje para su utilización; esta facilidad de uso permite una inmersión aun más poderosa, al permitir tomar menos conciencia del dispositivo tecnológico y enfocarse en la experiencia estética.</p>
 					</div>
 				</div>
-				<div class="imgWrap">
-					<img class="imgProyecto" alt="Introyección" src="img/ip_introyeccion.jpg"/>
-				</div>
-			</div>
-			<div class="boxProyecto boxSillon">
-				<div class="imgWrap">
-					<img class="imgProyecto" alt="Introyección" src="img/ip_sillonvr.jpg"/>
-				</div>
-				<div class="textWrap">
-					<div class="textoProyecto">
-						<h2>Sillón VR</h2>
-						<p><strong>Sillón colgante</strong> 360°, adaptado especialmente para experiencias en realidad virtual.</p>
-						<a href="sillonvr.html" class="verMas">Ver más</a>
+				<div class="grillaCuadros__item">
+					<div class="grillaCuadros__cuadro grillaCuadros__foto grillaCuadros__img2 grillaCuadros__der"></div>
+					<div class="grillaCuadros__cuadro grillaCuadros__texto grillaCuadros__izq">
+						<h2>Experiencias relajantes</h2>
+						<p class="parrafo">Mediante la colaboración entre personas provenientes de distintas disciplinas, desarrollamos escenarios virtuales que combinan mecánicas de juego con elementos visuales y sonoros, evaluados y mejorados constantemente con un objetivo: la construcción de experiencias relajantes, orientadas a reducir los niveles de estrés y ansiedad en las personas.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="patrocinio">
-			<p>Experiencia OK cuenta con el respaldo de:</p>
-			<div class="logosPatrocinio">
-				<div class="wrapSingleLogo">
-					<img class="logo" alt="Telefónica Open Future" src="img/logo_openfuture.png" />
-				</div>
-				<div class="wrapSingleLogo">
-					<img class="logo" alt="NeoMedia Lab" src="img/logo_neomedialab.png" />
-				</div>
-				<div class="wrapSingleLogo">
-					<img class="logo" alt="CIDEM" src="img/logo_cidem.png" />
-				</div>
-				<div class="wrapSingleLogo">
-					<img class="logo" alt="DRG" src="img/logo_drg.png" />
+		<section id="partners" class="fullHeight margins">					<!-- adaptable, con márgenes -->
+			<div class="listaImagenes">
+				<h2>Colaboradores</h2>
+				<div class="listaImagenes__lista">
+					<div class="listaImagenes__item"><img src="img/logo_openfuture.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_neomedialab.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_cidem.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_drg.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_breness.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_untref.png"/></div>
+					<div class="listaImagenes__item"><img src="img/logo_3f.png"/></div>
 				</div>
 			</div>
+		</section>
+		<section id="bannerFinal">								<!-- adaptable, sin márgenes -->
 		</section>
 		<footer>
-			<div class="contacto">
-				<div class="infoContacto">
-					<div class="textoContacto">
-						<h4>Contacto:</h4>
-						<p class="separado">experienciaok@gmail.com</p>
-						<p class="separado">+54 911 57802653</p>
-						<p>horarios de atención:</p>
-						<p>9:00 - 18:00 hs</p>
-						
+		<section id="info" class="margins">					<!-- adaptable, con márgenes -->
+			<div class="widgetContainer">
+				<div class="footerWidget">
+					<img class="footerLogo" src="img/logo_experienciaok.png"/>
+					<p class="small">Experiencia OK crea experiencias transformadoras, desarrollando la jugabilidad y facilitando el uso de tecnologías de realidad virtual con fines de prevención y cuidado de la salud mental.</p>
+				</div>
+				<div class="footerWidget">
+					<h3>Menú</h3>
+					<ul>
+						<li><a href="#queHacemos">¿Qué hacemos?</a></li>
+						<li><a href="#beneficios">Beneficios</a></li>
+						<li><a href="#comoFunciona">Cómo funciona</a></li>
+						<li><a href="equipo.html">Equipo</a></li>
+						<li><a href="#info">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="footerWidget">
+					<div class="snippetInfo">
+						<h3>Contactanos</h3>
+						<p class="small">Email: experienciaok@gmail.com</p>
+						<p class="small">Teléfono: +54 911 57802653</p>
 					</div>
-					<div class="redes">
-						<h4>Seguinos en:</h4>
-						<div class="contLinksSN">
-							<a target="_blank" href="http://instagram.com/experienciaok/"><img class="instagram" alt="Instagram" src="img/sn_ig.png"/></a>
-							<a target="_blank" href="http://vimeo.com/experienciaok/"><img class="vimeo" alt="Vimeo" src="img/sn_vimeo.png"/></a>
-							<a target="_blank" href="http://www.facebook.com/experienciaok/"><img class="facebook" alt="Facebook" src="img/sn_fb.png"/></a>
-						</div>
+					<div class="snippetInfo">
+						<h3>Dirección</h3>
+						<p class="small"> Godoy Cruz 2351, Palermo (Soho)</p>
+						<p class="small">CABA, Buenos Aires, Argentina</p>
 					</div>
 				</div>
 			</div>
-			<div class="copyright">
-				<p>© 2018 Experiencia OK. Todos los derechos reservados.</p>
-			</div>
-		</footer>
+		</section>
+		<section id="notice">									<!-- adaptable, sin márgenes -->
+			<p class="smaller">© 2018 Experiencia OK. Todos los derechos reservados<p>
+		</section>
+	</footer>
 	</body>
-
 </html>
