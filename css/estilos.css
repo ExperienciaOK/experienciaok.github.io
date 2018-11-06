@@ -93,7 +93,11 @@
 /*--------------------- COLOR ---------------------*/
 		
 		/*colores generales*/
-		
+
+		.overlayBgVideo{
+			background-color:rgba(0,0,0,0.3);
+		}
+
 		footer section{
 			background-color:black;
 			color:white;
