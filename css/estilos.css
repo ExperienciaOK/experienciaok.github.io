@@ -253,14 +253,16 @@
 		}
 
 		.conocerMas{
-			cursor:pointer;
-			background: none;
-			border: 2px solid white;
-			color: white;
-			text-transform: uppercase;
-			padding: 10px 25px;
-			font-size: 1.1em;
-			margin-top: 6%;
+		    cursor: pointer;
+		    background: none;
+		    border: 2px solid white;
+		    color: white;
+		    text-transform: uppercase;
+		    padding: 18px 45px;
+		    font-size: 1.25em;
+		    letter-spacing: 1px;
+		    margin-top: 6%;
+		    border-radius: 50px 50px;
 		}
 		
 /*------------------------------------------- GRILLA DE CUADROS ----------------------------------------------------*/
