@@ -310,7 +310,6 @@
 			
 			#queHacemos .contenedor{
 				max-width:800px;
-				margin-bottom: 100px; /*hack: compensa desfasaje por menú*/
 			}
 			
 			#info .contenedor{
@@ -363,7 +362,6 @@
 		
 		.cards-x3{
 			width:100%;
-			margin-bottom:100px; /*hack: compensa desfasaje por menú*/
 		}
 		.cards-x3::after { /*clearfix*/
 			content: "";
