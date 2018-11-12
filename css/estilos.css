@@ -8,9 +8,13 @@
 
 /*poner acá TODOS los elementos tipográficos. En el resto de las secciones solamente hay cuestiones estructurales/de layout*/
 
+		/*general*/
+
 		html{
 			font-family:'Questrial', sans-serif;
 		}
+		
+		/*headings*/
 		
 		h1{
 			margin-top:1em; /*me permito un margin top porque se supone que nunca hay elementos al mismo nivel horizontal que un h1, con otros headers esto no es seguro*/
@@ -24,15 +28,24 @@
 			margin-bottom: 1em;
 			color: #07d;
 		}
+		
+				.listaImagenes h2{
+					text-align:center;
+					margin-bottom:2em;
+				}
+		
+				.sectorTexto h2{
+					font-size: 2em;
+				}
 
 		h3{
 			font-size: 1.5em;
 			margin-bottom: 0.6em;
 		}
 		
-				.listaImagenes h2{
-					text-align:center;
-					margin-bottom:2em;
+				.footerWidget h3{
+					font-size:1.2em;
+					font-weight:bold;
 				}
 				
 		h4{
@@ -41,34 +54,20 @@
 			font-weight:bold;
 		}
 		
-		p{
-			font-size: 1.1em;
-			line-height: 1.6em;
-			margin-bottom: 20px;
-		}
-		
-				section#notice p{ 					/*caso especial: aviso legal*/
-					text-align:center;
-				}
-		
-				.overlayBgVideo .contenido p{ 		/*caso especial: banner de inicio*/
-					color:white;
-					font-size:2.8em;
-					padding:0 10%;
-					font-weight:bold;
-					line-height:1.3em;
-					text-transform:uppercase;
-				}
-		
-		p.small{
-			font-size: 0.9em;
+		/*modulos especiales*/
+
+		.textoGrandeHome{
+			color: white;
+			font-size: 2.8em;
+			font-weight: bold;
 			line-height: 1.3em;
-			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+		.textoChicoHome{
+			color: white;
 		}
 		
-		p.smaller{
-			font-size: 0.8em;
-		}
+		/*interfaz*/
 		
 		.pgwMenu li a{
 			text-transform:uppercase;
@@ -88,30 +87,46 @@
 			text-decoration:none;
 			line-height:1.3em;
 		}
-
 		
+		.conocerMas{
+			text-transform: uppercase;
+			font-size: 1.1em;
+			letter-spacing: 1px;
+			font-weight: bold;
+		}
+		
+		.conocerMas:hover{
+			background-color: rgba(255,255,255,0.5);
+			transition: 0.4s;
+		}
+		
+		/*texto de cuerpo*/
+
+		p{
+			font-size: 1.1em;
+			line-height: 1.8em;
+			margin-bottom: 20px;
+		}
+		
+		p.small{
+			font-size: 0.9em;
+			line-height: 1.3em;
+			margin-bottom: 0;
+		}
+		
+		p.smaller{
+			font-size: 0.8em;
+		}
+		
+		.centrado{
+			text-align:center;
+		}
+
+
 		
 		
 /*--------------------- COLOR ---------------------*/
-		
-		/*colores generales*/
 
-		.overlayBgVideo{
-			background-color:rgba(0,0,0,0.3);
-		}
-
-		footer section{
-			background-color:black;
-			color:white;
-		}
-		
-		section{
-			background-color:white;
-		}
-		
-		.grillaCuadros__texto{
-			background-color:#f9f9ff;
-		}
 		
 		/*reset de estilos de pgwMenu*/
 		
@@ -121,8 +136,52 @@
 		
 		.pgwMenu li a:hover{
 			background:none;
+		}	
+		
+
+		
+		/*COLORES GENERALES*/
+
+		.overlayBgVideo{
+			background-color:rgba(0,0,0,0.3);
+		}
+
+		.conocerMas{
+		    background: none;
+		    color: white;
+		    border: 2px solid white;
 		}
 		
+		.cards-x3__item{
+			box-shadow: 0 0 15px 5px #fcfcff;
+			transition:0.4s;
+			
+		}
+	
+		.cards-x3__item:hover{
+			box-shadow: 0 0 15px 5px #ebebee;
+			transition:0.4s;
+			
+		}
+	
+		.grillaCuadros__texto{
+			background-color:#f9f9ff;
+		}
+		
+		footer section{
+			background-color:black;
+			color:white;
+		}
+		
+		section{
+			background-color:white;
+		}
+		
+				section#queHacemos{
+					background-color:#ddd;
+				}
+
+	
 		/*estados de color del menú*/
 		
 		.mainNav--transparente{
@@ -133,7 +192,16 @@
 			background-color:rgba(0,0,0,0.9);
 			transition:0.4s;
 		}
+
+		.contenedor{
+			background-color:transparent;
+		}	
+				#queHacemos .contenedor{
+					background-color:white;
+				}	
 		
+		
+
 		
 		
 /*------------------------------------------- NAVEGACIÓN GENERAL ----------------------------------------------------*/
@@ -146,11 +214,6 @@
 
 		section.fullHeight{
 			min-height:100vh;
-		}
-
-		section.margins{
-			box-sizing:border-box;
-			padding:10%;
 		}
 
 /*menú*/
@@ -168,17 +231,16 @@
 		}
 
 		.mainNav__logo{
-			padding-left: 3%;
+			padding-left: 13.5%;
 		}
 		.mainNav__logo img{
 			width: 250px;
 		}
 			
 		.pgwMenu{
-			width:100%;
-			padding-right: 3%;
-			float:right;
-			
+			width: 100%;
+			padding-right: 13.5%;
+			float: right;
 		}
 
 		.pgwMenu ul{
@@ -188,7 +250,7 @@
 
 
 		.pgwMenu li{
-			margin:0 20px;
+			margin: 0 0 0 25px;
 		}
 		
 		.pgwMenu li a{
@@ -216,6 +278,46 @@
 			width:100%;
 		}
 		
+/*------------------------------------------- CONTENEDORES DE CENTRADO VERTICAL DE SECCIONES ----------------------------------------------------*/
+	
+	section{
+		display:table;
+	}
+
+	.tableCell{
+		display:table-cell;
+		vertical-align:middle;
+		width:100%;
+	}
+			#queHacemos .tableCell{ /*esta en particular no está centrada*/
+				vertical-align:middle;
+			}
+
+	.contenedor{
+		margin:0 auto;
+		padding:5%;
+	}
+		
+	.contenedor::after { /*clearfix*/
+		content: "";
+		clear: both;
+		display: table;
+	}	
+	
+			.overlayBgVideo .contenedor{
+				max-width:600px;
+			}
+			
+			#queHacemos .contenedor{
+				max-width:800px;
+				margin-bottom: 100px; /*hack: compensa desfasaje por menú*/
+			}
+			
+			#info .contenedor{
+				padding:1%;
+			}
+
+
 /*------------------------------------------- HOME ----------------------------------------------------*/
 
 		section#home{
@@ -240,39 +342,64 @@
 			left:0;
 			display: table;
 		}
-		
-		/*hacks para centrar sin flexbox*/
-		
-		.overlayBgVideo .contenido{
-			display: table-cell; 
-			vertical-align: middle; 
-			text-align: center;
-		}
-		
-		.overlayBgVideo .contenido p{
-			max-width:600px;
-			margin:0 auto;
+			
+		.conocerMas{	    
+			border-radius: 50px 50px;
+			margin: 0 auto;
+			margin-top: 3vh;
+			padding: 15px 30px;
+			cursor: pointer;
+			display: block;
 		}
 
-		.conocerMas{
-		    cursor: pointer;
-		    background: none;
-		    border: 2px solid white;
-		    color: white;
-		    text-transform: uppercase;
-		    padding: 18px 45px;
-		    font-size: 1.25em;
-		    letter-spacing: 1px;
-		    margin-top: 6%;
-		    border-radius: 50px 50px;
+/*------------------------------------------- BENEFICIOS ----------------------------------------------------*/
+
+		section#queHacemos{
+			background-image:url("../img/bcg_atardecer.jpg");
 		}
+		
+
+/*------------------------------------------- 3 CARDS (BENEFICIOS) ----------------------------------------------------*/
+		
+		.cards-x3{
+			width:100%;
+			margin-bottom:100px; /*hack: compensa desfasaje por menú*/
+		}
+		.cards-x3::after { /*clearfix*/
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
+		.cards-x3__item{
+			display:block;
+			box-sizing: border-box;
+			float:left;
+			width:29%;
+			margin:2%;
+			padding:6%;
+		}
+		
+		.cards-x3__image{
+			height: 150px;
+			width: 150px;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
 		
 /*------------------------------------------- GRILLA DE CUADROS ----------------------------------------------------*/
 
 		.grillaCuadros{
 			width:100%;
-			overflow:auto; /*clearfix*/
 		}
+		
+		.grillaCuadros::after { /*clearfix*/
+			content: "";
+			clear: both;
+			display: table;
+		}
+		
 		.grillaCuadros__cuadro{
 			width:50%;
 			height:80vh;
@@ -313,43 +440,25 @@
 		}
 		.listaImagenes__item{
 			margin: 20px 30px;
-		}
+		}		
+		
 /*------------------------------------------- BANNER FONDO ----------------------------------------------------*/
 
 		section#bannerFinal{
-			height:500px;
+			display:block;
+			height:550px;
 			background:none;
 			background-image:url("../img/bn_hamacame.jpg");
 			background-position:center;
 			background-size:cover;
 		}
-
-/*------------------------------------------- WIDGETS GENERAL ----------------------------------------------------*/
+		
+/*------------------------------------------- WIDGETS FOOTER ----------------------------------------------------*/		
 		
 		.widgetContainer{
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:space-evenly;
-		}
-		
-/*------------------------------------------- EQUIPO ----------------------------------------------------*/
-
-		.widgetEquipo{
-			box-sizing:border-box;
-			float:left;
-			padding:30px;
-			text-align:center;
-		}
-		
-		.widgetEquipo__foto{
-			margin-bottom: 10%;
-		}
-	
-		
-/*------------------------------------------- FOOTER ----------------------------------------------------*/		
-		
-		section#info.margins{
-			padding:3%;
 		}
 		
 		.footerWidget{
@@ -364,16 +473,28 @@
 			margin-top:30px;
 		}
 		
-		section#notice{
-			box-sizing:border-box;
-			padding:20px;
-			width:100%;
+		.footerWidget ul li {
+			margin-bottom: 10px;
 		}
 		
 		.footerLogo{
 			margin-bottom: 20px;
 		}
 		
+		
+/*------------------------------------------- WIDGETS EQUIPO ----------------------------------------------------*/
+
+		.widgetEquipo{
+			box-sizing:border-box;
+			float:left;
+			padding:30px;
+			text-align:center;
+		}
+		
+		.widgetEquipo__foto{
+			margin-bottom: 10%;
+		}
+	
 		
 /*------------------------------------------- RESPONSIVE ----------------------------------------------------*/
 
@@ -384,7 +505,17 @@
 				html{
 					font-size:0.9em;
 				}
-				
+			
+			/*MENU*/
+			
+			.mainNav__logo{
+				padding-left: 4%;
+			}
+			
+			.pgwMenu{
+				padding-right: 3%;
+			}			
+			
 			/*HOME*/
 			
 				section#home{
@@ -396,14 +527,25 @@
 					display:none;
 				}
 				
+			/*BENEFICIOS*/
+				
+			.cards-x3__item{
+				width:100%;
+			}
+				
 			/*GRILLA CUADROS*/
 			
 				.grillaCuadros__cuadro{
 					width:100%;
 				}
 			
-			/*FOOTER*/
 			
+			/*FOOTER*/
+
+				#info .contenedor{
+					padding-top:50px;
+				}
+				
 				.footerWidget{
 					height:auto;
 				}
