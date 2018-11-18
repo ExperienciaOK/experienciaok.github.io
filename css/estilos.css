@@ -28,14 +28,13 @@
 			margin-bottom: 1em;
 			color: #07d;
 		}
-		
-				.listaImagenes h2{
-					text-align:center;
-					margin-bottom:2em;
-				}
-		
+			
 				.sectorTexto h2{
 					font-size: 2em;
+				}
+				
+				#quienesSomos h2{ /*HACK: las secciones de texto no están preparadas para ser primeras en la sección. Con esto compenso la altura del header, que si no lo tapa*/
+					margin-top:50px;
 				}
 
 		h3{
@@ -431,12 +430,13 @@
 
 /*------------------------------------------- LISTA DE IMÁGENES ----------------------------------------------------*/
 		
-		.listaImagenes__lista{ /*TODO: para asegurar compatibilidad, ver si puedo evitar el uso de flexbox*/
+		.listaExpandible__lista{ /*TODO: para asegurar compatibilidad, ver si puedo evitar el uso de flexbox*/
+			margin-top:100px;
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:center;
 		}
-		.listaImagenes__item{
+		.listaExpandible__item{
 			margin: 20px 30px;
 		}		
 		
