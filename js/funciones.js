@@ -100,7 +100,7 @@ $(document).ready(function(){
 	
 		$('.conocerMas').click(function(){
 			$('html, body').animate({
-				scrollTop: $('#queHacemos').offset().top-$(".mainNav").height()
+				scrollTop: $('#comoFunciona').offset().top-$(".mainNav").height()
 			}, 500);
 		});
 	
