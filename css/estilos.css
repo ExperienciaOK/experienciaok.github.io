@@ -87,14 +87,18 @@
 			line-height:1.3em;
 		}
 		
-		.conocerMas{
+		.homeButton{
 			text-transform: uppercase;
 			font-size: 1.1em;
 			letter-spacing: 1px;
 			font-weight: bold;
 		}
-		
-		.conocerMas:hover{
+
+		.homeButton.highlight{
+			background: rgba(0,127,255,0.5);
+		}
+
+		.homeButton:hover{
 			background-color: rgba(255,255,255,0.5);
 			transition: 0.4s;
 		}
