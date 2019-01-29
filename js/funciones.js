@@ -98,9 +98,14 @@ $(document).ready(function(){
 	
 	//Click en botón de "Conocer más"
 	
-		$('.conocerMas').click(function(){
+		$('#conocerMas').click(function(){
 			$('html, body').animate({
 				scrollTop: $('#comoFunciona').offset().top-$(".mainNav").height()
+			}, 500);
+		});
+		$('#hacerReserva').click(function(){
+			$('html, body').animate({
+				scrollTop: $('#paquetes').offset().top-$(".mainNav").height()
 			}, 500);
 		});
 	
