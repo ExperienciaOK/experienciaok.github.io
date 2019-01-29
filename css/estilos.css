@@ -391,7 +391,7 @@
 
 		.cardButton{
 		    width: 200px;
-		    background: white;
+		    background: transparent;
 		    height: 50px;
 		    font-family: 'Questrial', sans serif;
 		    font-size: 1.1em;
