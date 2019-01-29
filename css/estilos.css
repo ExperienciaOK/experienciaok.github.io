@@ -389,7 +389,17 @@
 			margin-bottom: 50px;
 		}
 
-		
+		.cardButton{
+		    background: white;
+		    width: 200px;
+		    height: 50px;
+		    font-family: 'Questrial', sans serif;
+		    font-size: 1.1em;
+		    border: 1px solid;
+		}
+		.cardButton:hover{
+		    background: rgb(0,127,255);
+		}
 /*------------------------------------------- GRILLA DE CUADROS ----------------------------------------------------*/
 
 		.grillaCuadros{
