@@ -390,19 +390,19 @@
 		}
 
 		.cardButton{
-		    background: rgba(0,127,255,0.2);
 		    width: 200px;
+		    background: white;
 		    height: 50px;
 		    font-family: 'Questrial', sans serif;
 		    font-size: 1.1em;
-		    border: 1px solid #ddd;
+		    border: 1px solid black;
 		    transition: 0.4s;
 		    cursor: pointer;
 		}
 		.cardButton:hover{
-		    background: white;
 		    border-color: #ddd;
 		    transition: 0.4s;
+		    color: #aaa;
 		}
 /*------------------------------------------- GRILLA DE CUADROS ----------------------------------------------------*/
 
