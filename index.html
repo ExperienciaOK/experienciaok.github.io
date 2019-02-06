@@ -9,9 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
+	  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/pgwmenu.css">
 	<link rel="stylesheet" href="css/estilos.css">
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>	
 	<script src="js/pgwmenu.js"></script>
 	<script src="js/funciones.js"></script>
 	</head>
@@ -24,19 +25,17 @@
 					<li class="mainNav__item"><a href="#comoFunciona">Cómo funciona</a></li>
 					<li class="mainNav__item"><a href="#paquetes">Paquetes</a></li>
 					<li class="mainNav__item"><a href="equipo.html">Equipo</a></li>
-					<li class="mainNav__item"><a href="#info">Contacto</a></li>
+					<li class="mainNav__item contacto"><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</nav>
 		</header>
 		
 		<section id="home" class="fullHeight itemMenu">					<!-- full height, sin márgenes -->
-			<video autoplay muted loop class="fullScreenVideo">
-			  <source src="video/expok_web_baja.mp4" type="video/mp4">
-			</video>
 			<div class="overlayBgVideo">
 				<div class="tableCell"> <!-- Esta clase de contenedores sirve para centrar verticalmente lo que hay adentro; lo de adentro, a su vez, se centra horizontalmente con margin:0 auto -->
 					<div class="contenedor"> <!-- Esta clase de contenedores sirve para centrar verticalmente lo que hay adentro; lo de adentro, a su vez, se centra horizontalmente con margin:0 auto -->
 						<p class="textoGrandeHome centrado">Innovación en realidad virtual para eventos</p> <!-- Esto tiene un layout propio -->
+
 						<p class="textoChicoHome centrado">Desarrollamos videojuegos contemplativos, originales y con una interfaz única</p> <!-- Esto tiene un layout propio -->
 						<button class="homeButton highlight" id="hacerReserva">Hacer reserva</button>
 						<button class="homeButton" id="conocerMas">Conocer más</button>
@@ -69,20 +68,31 @@
 					<div class="cards-x3 centrado">
 						<div class="cards-x3__item">
 							<img class="cards-x3__image" src="img/VR_1.svg"/>
-							<h3>Paquete 1</h3>
-							<p>Experiencia de 3 horas</p>
+							<div class="contenedorTexto">
+								<h3>Paquete Básico</h3>
+								<p>Experiencia de 3 horas</p>
+							</div>
 							<a href="suscribirse.html"><button class="cardButton">Contratar ahora</button></a>
 						</div>
+						
 						<div class="cards-x3__item">
 							<img class="cards-x3__image" src="img/VR_2.svg"/>
-							<h3>Paquete 2</h3>
-							<p>Experiencia de 5 horas</p>
+							<div class="contenedorTexto">
+								<h3>Paquete Extendido</h3>
+								<p>Experiencia de 5 horas</p>
+								<p>+Pack adicional básico</p>
+							</div>
 							<a href="suscribirse.html"><button class="cardButton">Contratar ahora</button></a>
 						</div>
+						
 						<div class="cards-x3__item">
 							<img class="cards-x3__image" src="img/VR_3.svg"/>
-							<h3>Paquete 3</h3>
-							<p>Experiencia de 8 horas</p>
+							<div class="contenedorTexto">
+								<h3>Paquete Total</h3>
+								<p>Experiencia de 8 horas</p>
+								<p>+Pack adicional básico</p>
+								<p>+Pack adicional plus</p>
+							</div>
 							<a href="suscribirse.html"><button class="cardButton">Contratar ahora</button></a>
 						</div>
 					</div>
@@ -116,7 +126,19 @@
 				<div class="widgetContainer">
 					<div class="footerWidget">
 						<img class="footerLogo" src="img/logo_experienciaok.png"/>
-						<p class="small">Experiencia OK crea experiencias transformadoras, desarrollando la jugabilidad y facilitando el uso de tecnologías de realidad virtual con fines de prevención y cuidado de la salud mental.</p>
+                     <p class="small">Ingresá tu casilla de mail para enterarte de las últimas novedades:</p>
+				   <!-- Begin Mailchimp Signup Form -->
+					  <div id="mc_embed_signup" class="suscFooter">
+						 <form action="https://experienciaok.us19.list-manage.com/subscribe/post?u=e5f3de5fbaa00be752b6d6026&amp;id=05cfefd6fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+							   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
+							   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e5f3de5fbaa00be752b6d6026_05cfefd6fa" tabindex="-1" value=""></div>
+							   <div class="clear"><input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						 </form>
+					  </div>
+                  <!--End mc_embed_signup-->
 					</div>
 					<div class="footerWidget">
 						<h3>Menú</h3>

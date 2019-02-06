@@ -125,7 +125,11 @@
 			text-align:center;
 		}
 
-
+		a{
+			text-decoration:none;
+			color:inherit;
+			font-weight:bold;
+		}
 		
 		
 /*--------------------- COLOR ---------------------*/
@@ -281,6 +285,11 @@
 			width:100%;
 		}
 		
+		.pgwMenu ul li.contacto{
+			padding:0 15px;
+			border: 1px solid #555;
+		}
+		
 /*------------------------------------------- CONTENEDORES DE CENTRADO VERTICAL DE SECCIONES ----------------------------------------------------*/
 	
 	section{
@@ -319,12 +328,15 @@
 				padding:1%;
 			}
 
+	.sectorTexto{
+		width:100%;
+	}
 
 /*------------------------------------------- HOME ----------------------------------------------------*/
 
 		section#home{
-			background: none;
-		}
+			background: url("../img/bg_mauro_home.jpg");
+		} 
 		
 		.fullScreenVideo{
 			pointer-events:none;
@@ -343,6 +355,7 @@
 			top:0;
 			left:0;
 			display: table;
+			background-color: rgba(0,0,0,0.7);
 		}
 			
 		.homeButton{	    
@@ -382,11 +395,15 @@
 			background:white;
 		}
 		
+		.cards-x3__item .contenedorTexto{
+			height:200px;
+		}
+		
 		.cards-x3__image{
 			height: 150px;
 			width: 150px;
 			margin: 0 auto;
-			margin-bottom: 50px;
+			margin-bottom: 25px;
 		}
 
 		.cardButton{
@@ -395,9 +412,10 @@
 		    height: 50px;
 		    font-family: 'Questrial', sans serif;
 		    font-size: 1.1em;
-		    border: 1px solid black;
+		    border: 2px solid #aaa;
 		    transition: 0.4s;
 		    cursor: pointer;
+			font-weight: bold;
 		}
 		.cardButton:hover{
 		    border-color: #ddd;
@@ -498,6 +516,25 @@
 			margin-bottom: 20px;
 		}
 		
+		/*suscripción*/
+		
+		.suscFooter#mc_embed_signup{
+			margin-top:15px;
+			background:none;
+		}
+		
+		.suscFooter#mc_embed_signup input{
+			border-radius:0;
+			background:rgba(255,255,255,0.5);
+		}
+		
+		.suscFooter#mc_embed_signup input.email{
+			width:100%;
+		}
+		
+		.suscFooter form#mc-embedded-subscribe-form{
+			padding:0;
+		}
 		
 /*------------------------------------------- WIDGETS EQUIPO ----------------------------------------------------*/
 
@@ -513,6 +550,29 @@
 		}
 	
 		
+/*------------------------------------------- SUSCRIBITE ----------------------------------------------------*/
+
+section#suscripcion{
+	min-height:100vh;
+}
+
+#mc_embed_signup{
+	background:#fff;
+	clear:left;
+	font:14px Helvetica,Arial,sans-serif;
+	}
+
+.pagSuscripcion form#mc-embedded-subscribe-form {
+    padding-left: 0;
+}
+
+/*------------------------------------------- CONTACTO ----------------------------------------------------*/
+
+.sectorTexto .formularioGoogle{
+	margin-left:50%;
+	transform: translate(-50%,0);
+}
+
 /*------------------------------------------- RESPONSIVE ----------------------------------------------------*/
 
 		@media(max-width:1000px){
@@ -532,6 +592,11 @@
 			.pgwMenu{
 				padding-right: 3%;
 			}			
+			
+			.pgwMenu ul li.contacto{
+				padding:0;
+				border: none;
+			}
 			
 			/*HOME*/
 			
