@@ -125,7 +125,11 @@
 			text-align:center;
 		}
 
-
+		a{
+			text-decoration:none;
+			color:inherit;
+			font-weight:bold;
+		}
 		
 		
 /*--------------------- COLOR ---------------------*/
@@ -281,6 +285,11 @@
 			width:100%;
 		}
 		
+		.pgwMenu ul li.contacto{
+			padding:0 15px;
+			border: 1px solid #555;
+		}
+		
 /*------------------------------------------- CONTENEDORES DE CENTRADO VERTICAL DE SECCIONES ----------------------------------------------------*/
 	
 	section{
@@ -319,6 +328,9 @@
 				padding:1%;
 			}
 
+	.sectorTexto{
+		width:100%;
+	}
 
 /*------------------------------------------- HOME ----------------------------------------------------*/
 
@@ -554,6 +566,13 @@ section#suscripcion{
     padding-left: 0;
 }
 
+/*------------------------------------------- CONTACTO ----------------------------------------------------*/
+
+.sectorTexto .formularioGoogle{
+	margin-left:50%;
+	transform: translate(-50%,0);
+}
+
 /*------------------------------------------- RESPONSIVE ----------------------------------------------------*/
 
 		@media(max-width:1000px){
@@ -573,6 +592,11 @@ section#suscripcion{
 			.pgwMenu{
 				padding-right: 3%;
 			}			
+			
+			.pgwMenu ul li.contacto{
+				padding:0;
+				border: none;
+			}
 			
 			/*HOME*/
 			
