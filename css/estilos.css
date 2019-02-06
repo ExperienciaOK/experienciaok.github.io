@@ -504,6 +504,25 @@
 			margin-bottom: 20px;
 		}
 		
+		/*suscripción*/
+		
+		.suscFooter#mc_embed_signup{
+			margin-top:15px;
+			background:none;
+		}
+		
+		.suscFooter#mc_embed_signup input{
+			border-radius:0;
+			background:rgba(255,255,255,0.5);
+		}
+		
+		.suscFooter#mc_embed_signup input.email{
+			width:100%;
+		}
+		
+		.suscFooter form#mc-embedded-subscribe-form{
+			padding:0;
+		}
 		
 /*------------------------------------------- WIDGETS EQUIPO ----------------------------------------------------*/
 
