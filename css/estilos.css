@@ -323,8 +323,8 @@
 /*------------------------------------------- HOME ----------------------------------------------------*/
 
 		section#home{
-			background: none;
-		}
+			background: url("../img/bg_mauro_home.jpg");
+		} 
 		
 		.fullScreenVideo{
 			pointer-events:none;
@@ -343,6 +343,7 @@
 			top:0;
 			left:0;
 			display: table;
+			background-color: rgba(0,0,0,0.7);
 		}
 			
 		.homeButton{	    
@@ -382,11 +383,15 @@
 			background:white;
 		}
 		
+		.cards-x3__item .contenedorTexto{
+			height:200px;
+		}
+		
 		.cards-x3__image{
 			height: 150px;
 			width: 150px;
 			margin: 0 auto;
-			margin-bottom: 50px;
+			margin-bottom: 25px;
 		}
 
 		.cardButton{
@@ -395,9 +400,10 @@
 		    height: 50px;
 		    font-family: 'Questrial', sans serif;
 		    font-size: 1.1em;
-		    border: 1px solid black;
+		    border: 2px solid #aaa;
 		    transition: 0.4s;
 		    cursor: pointer;
+			font-weight: bold;
 		}
 		.cardButton:hover{
 		    border-color: #ddd;
