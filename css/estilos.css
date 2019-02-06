@@ -130,7 +130,10 @@
 			color:inherit;
 			font-weight:bold;
 		}
-		
+			
+			.footerWidget a{
+				font-weight:normal;
+			}
 		
 /*--------------------- COLOR ---------------------*/
 
