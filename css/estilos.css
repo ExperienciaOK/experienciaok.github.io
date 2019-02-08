@@ -598,6 +598,21 @@ font-family: questrial;
 font-size: 1.1em;
 cursor:pointer;
 }
+/*------------------------------------------- 404, thank you pages ----------------------------------------------------*/
+
+#error404 .contenedorImg, #mensajeEnviado .contenedorImg{
+  float:left;
+  margin-bottom:50px;
+  margin-right:100px;
+}
+@media(max-width:1200px){
+  #error404 .contenedorImg, #mensajeEnviado .contenedorImg{
+    width:100%;
+  }
+}
+#error404 .gigante{
+  font-size:14em;
+}
 
 /*------------------------------------------- RESPONSIVE ----------------------------------------------------*/
 
