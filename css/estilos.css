@@ -339,6 +339,8 @@
 
 		section#home{
 			background: url("../img/bg_mauro_home.jpg");
+			background-size: cover;
+			background-position: center;
 		} 
 		
 		.fullScreenVideo{
