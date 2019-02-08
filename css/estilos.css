@@ -13,26 +13,26 @@
 		html{
 			font-family:'Questrial', sans-serif;
 		}
-		
+
 		/*headings*/
-		
+
 		h1{
 			margin-top:1em; /*me permito un margin top porque se supone que nunca hay elementos al mismo nivel horizontal que un h1, con otros headers esto no es seguro*/
 			font-size: 4em;
 			margin-bottom: 1em;
 			color: #07d;
 		}
-		
+
 		h2{
 			font-size: 3em;
 			margin-bottom: 1em;
 			color: #07d;
 		}
-			
+
 				.sectorTexto h2{
 					font-size: 2em;
 				}
-				
+
 				#quienesSomos h2{ /*HACK: las secciones de texto no están preparadas para ser primeras en la sección. Con esto compenso la altura del header, que si no lo tapa*/
 					margin-top:50px;
 				}
@@ -41,18 +41,18 @@
 			font-size: 1.5em;
 			margin-bottom: 0.6em;
 		}
-		
+
 				.footerWidget h3{
 					font-size:1.2em;
 					font-weight:bold;
 				}
-				
+
 		h4{
 			font-size:1.2em;
 			margin-bottom:0.5em;
 			font-weight:bold;
 		}
-		
+
 		/*modulos especiales*/
 
 		.textoGrandeHome{
@@ -65,9 +65,9 @@
 		.textoChicoHome{
 			color: white;
 		}
-		
+
 		/*interfaz*/
-		
+
 		.pgwMenu li a{
 			text-transform:uppercase;
 			font-size:0.9em;
@@ -76,17 +76,17 @@
 			color:#ccc;
 			transition:0.4s;
 		}
-		
+
 		.mainNav__item.active a{
 			color:#999;
 		}
-		
+
 		.footerWidget li a {
 			color:white;
 			text-decoration:none;
 			line-height:1.3em;
 		}
-		
+
 		.homeButton{
 			text-transform: uppercase;
 			font-size: 1.1em;
@@ -102,7 +102,7 @@
 			background-color: rgba(255,255,255,0.5);
 			transition: 0.4s;
 		}
-		
+
 		/*texto de cuerpo*/
 
 		p{
@@ -110,17 +110,17 @@
 			line-height: 1.8em;
 			margin-bottom: 20px;
 		}
-		
+
 		p.small{
 			font-size: 0.9em;
 			line-height: 1.3em;
 			margin-bottom: 0;
 		}
-		
+
 		p.smaller{
 			font-size: 0.8em;
 		}
-		
+
 		.centrado{
 			text-align:center;
 		}
@@ -130,26 +130,26 @@
 			color:inherit;
 			font-weight:bold;
 		}
-			
+
 			.footerWidget a{
 				font-weight:normal;
 			}
-		
+
 /*--------------------- COLOR ---------------------*/
 
-		
+
 		/*reset de estilos de pgwMenu*/
-		
+
 		.pgwMenu{
 			background:none;
 		}
-		
+
 		.pgwMenu li a:hover{
 			background:none;
-		}	
-		
+		}
 
-		
+
+
 		/*COLORES GENERALES*/
 
 		.overlayBgVideo{
@@ -161,39 +161,39 @@
 		    color: white;
 		    border: 2px solid white;
 		}
-		
+
 		.cards-x3__item{
 			box-shadow: 0 0 15px 5px #fcfcff;
 			transition:0.4s;
-			
+
 		}
-	
+
 		.cards-x3__item:hover{
 			box-shadow: 0 0 15px 5px #ebebee;
 			transition:0.4s;
-			
+
 		}
-	
+
 		.grillaCuadros__texto{
 			background-color:#f9f9ff;
 		}
-		
+
 		footer section{
 			background-color:black;
 			color:white;
 		}
-		
+
 		section{
 			background-color:white;
 		}
-		
+
 				section#queHacemos{
 					background-color:#ddd;
 				}
 
-	
+
 		/*estados de color del menú*/
-		
+
 		.mainNav--transparente{
 			background-color:transparent;
 			transition:0.4s;
@@ -205,15 +205,15 @@
 
 		.contenedor{
 			background-color:transparent;
-		}	
+		}
 				#queHacemos .contenedor{
 					background-color:white;
-				}	
-		
-		
+				}
 
-		
-		
+
+
+
+
 /*------------------------------------------- NAVEGACIÓN GENERAL ----------------------------------------------------*/
 
 /*secciones*/
@@ -227,7 +227,7 @@
 		}
 
 /*menú*/
-		
+
 		.mainNav{
 			height:80px;
 			display:flex;
@@ -246,7 +246,7 @@
 		.mainNav__logo img{
 			width: 250px;
 		}
-			
+
 		.pgwMenu{
 			width: 100%;
 			padding-right: 13.5%;
@@ -262,16 +262,16 @@
 		.pgwMenu li{
 			margin: 0 0 0 25px;
 		}
-		
+
 		.pgwMenu li a{
 			padding:0 6px;
 		}
-		
+
 		.pgwMenu .pm-dropDown a{
 			float:right;
 			background: none;
 		}
-		
+
 		.pgwMenu .pm-links.mobile, .pgwMenu .pm-viewMore > ul{
 			width: 250px;
 			background: black;
@@ -283,18 +283,18 @@
 			top: -30px;
 		padding-top: 150px;
 		}
-		
+
 		.pgwMenu .pm-links.mobile li, .pgwMenu .pm-viewMore > ul > li{
 			width:100%;
 		}
-		
+
 		.pgwMenu ul li.contacto{
 			padding:0 15px;
-			border: 1px solid #555;
+			border: 1px solid #777;
 		}
-		
+
 /*------------------------------------------- CONTENEDORES DE CENTRADO VERTICAL DE SECCIONES ----------------------------------------------------*/
-	
+
 	section{
 		display:table;
 	}
@@ -312,21 +312,21 @@
 		margin:0 auto;
 		padding:5%;
 	}
-		
+
 	.contenedor::after { /*clearfix*/
 		content: "";
 		clear: both;
 		display: table;
-	}	
-	
+	}
+
 			.overlayBgVideo .contenedor{
 				max-width:600px;
 			}
-			
+
 			#queHacemos .contenedor{
 				max-width:800px;
 			}
-			
+
 			#info .contenedor{
 				padding:1%;
 			}
@@ -339,18 +339,20 @@
 
 		section#home{
 			background: url("../img/bg_mauro_home.jpg");
-		} 
-		
+			background-size: cover;
+			background-position: center;
+		}
+
 		.fullScreenVideo{
 			pointer-events:none;
 			position: fixed;
 			right: 0;
 			bottom: 0;
-			min-width: 100%; 
+			min-width: 100%;
 			min-height: 100%;
 			z-index: -2;
 		}
-		
+
 		.overlayBgVideo{
 			width:100%;
 			height:100%;
@@ -360,8 +362,8 @@
 			display: table;
 			background-color: rgba(0,0,0,0.7);
 		}
-			
-		.homeButton{	    
+
+		.homeButton{
 			border-radius: 50px 50px;
 			margin: 0 auto;
 			margin-top: 3vh;
@@ -375,10 +377,10 @@
 		section#paquetes{
 			background-image:url("../img/bcg_atardecer.jpg");
 		}
-		
+
 
 /*------------------------------------------- 3 CARDS (BENEFICIOS) ----------------------------------------------------*/
-		
+
 		.cards-x3{
 			width:100%;
 		}
@@ -387,7 +389,7 @@
 			clear: both;
 			display: table;
 		}
-		
+
 		.cards-x3__item{
 			display:block;
 			box-sizing: border-box;
@@ -397,11 +399,11 @@
 			padding:6%;
 			background:white;
 		}
-		
+
 		.cards-x3__item .contenedorTexto{
 			height:200px;
 		}
-		
+
 		.cards-x3__image{
 			height: 150px;
 			width: 150px;
@@ -430,13 +432,13 @@
 		.grillaCuadros{
 			width:100%;
 		}
-		
+
 		.grillaCuadros::after { /*clearfix*/
 			content: "";
 			clear: both;
 			display: table;
 		}
-		
+
 		.grillaCuadros__cuadro{
 			width:50%;
 			height:80vh;
@@ -454,7 +456,7 @@
 			background-size:cover;
 			background-position:center;
 		}
-		
+
 		.grillaCuadros__texto{
 			display:flex;
 			flex-direction:column;
@@ -469,7 +471,7 @@
 		}
 
 /*------------------------------------------- LISTA DE IMÁGENES ----------------------------------------------------*/
-		
+
 		.listaExpandible__lista{ /*TODO: para asegurar compatibilidad, ver si puedo evitar el uso de flexbox*/
 			margin-top:100px;
 			display:flex;
@@ -478,8 +480,8 @@
 		}
 		.listaExpandible__item{
 			margin: 20px 30px;
-		}		
-		
+		}
+
 /*------------------------------------------- BANNER FONDO ----------------------------------------------------*/
 
 		section#bannerFinal{
@@ -490,15 +492,15 @@
 			background-position:center;
 			background-size:cover;
 		}
-		
-/*------------------------------------------- WIDGETS FOOTER ----------------------------------------------------*/		
-		
+
+/*------------------------------------------- WIDGETS FOOTER ----------------------------------------------------*/
+
 		.widgetContainer{
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:space-evenly;
 		}
-		
+
 		.footerWidget{
 			width:350px;
 			height:220px;
@@ -506,39 +508,39 @@
 			box-sizing:border-box;
 			padding:1%;
 		}
-	
+
 		.footerWidget .snippetInfo:nth-child(2){
 			margin-top:30px;
 		}
-		
+
 		.footerWidget ul li {
 			margin-bottom: 10px;
 		}
-		
+
 		.footerLogo{
 			margin-bottom: 20px;
 		}
-		
+
 		/*suscripción*/
-		
+
 		.suscFooter#mc_embed_signup{
 			margin-top:15px;
 			background:none;
 		}
-		
+
 		.suscFooter#mc_embed_signup input{
 			border-radius:0;
 			background:rgba(255,255,255,0.5);
 		}
-		
+
 		.suscFooter#mc_embed_signup input.email{
 			width:100%;
 		}
-		
+
 		.suscFooter form#mc-embedded-subscribe-form{
 			padding:0;
 		}
-		
+
 /*------------------------------------------- WIDGETS EQUIPO ----------------------------------------------------*/
 
 		.widgetEquipo{
@@ -547,12 +549,12 @@
 			padding:30px;
 			text-align:center;
 		}
-		
+
 		.widgetEquipo__foto{
 			margin-bottom: 10%;
 		}
-	
-		
+
+
 /*------------------------------------------- SUSCRIBITE ----------------------------------------------------*/
 
 section#suscripcion{
@@ -571,38 +573,74 @@ section#suscripcion{
 
 /*------------------------------------------- CONTACTO ----------------------------------------------------*/
 
-.sectorTexto .formularioGoogle{
-	margin-left:50%;
-	transform: translate(-50%,0);
+#formularioContacto label{
+display:block;
+margin:15px 0;
+}
+#formularioContacto input, #formularioContacto textarea{
+width:50%;
+}
+#formularioContacto input{
+	height:30px;
+}
+@media(max-width:800px){
+#formularioContacto input, #formularioContacto textarea{
+width:80%;
+}
+}
+#formularioContacto .enviarMensaje{
+	 display: block;
+margin: 25px 0 0 0;
+background: none;
+border: 1px solid #aaa;
+padding: 10px 25px;
+font-family: questrial;
+font-size: 1.1em;
+cursor:pointer;
+}
+/*------------------------------------------- 404, thank you pages ----------------------------------------------------*/
+
+#error404 .contenedorImg, #mensajeEnviado .contenedorImg{
+  float:left;
+  margin-bottom:50px;
+  margin-right:100px;
+}
+@media(max-width:1200px){
+  #error404 .contenedorImg, #mensajeEnviado .contenedorImg{
+    width:100%;
+  }
+}
+#error404 .gigante{
+  font-size:14em;
 }
 
 /*------------------------------------------- RESPONSIVE ----------------------------------------------------*/
 
 		@media(max-width:1000px){
-			
+
 			/*HTML*/
-			
+
 				html{
 					font-size:0.9em;
 				}
-			
+
 			/*MENU*/
-			
+
 			.mainNav__logo{
 				padding-left: 4%;
 			}
-			
+
 			.pgwMenu{
 				padding-right: 3%;
-			}			
-			
+			}
+
 			.pgwMenu ul li.contacto{
 				padding:0;
 				border: none;
 			}
-			
+
 			/*HOME*/
-			
+
 				section#home{
 					background-image: url("../img/bn_main_web.jpg");
 					background-position:center;
@@ -611,28 +649,28 @@ section#suscripcion{
 				.fullScreenVideo{
 					display:none;
 				}
-				
+
 			/*BENEFICIOS*/
-				
+
 			.cards-x3__item{
 				width:100%;
 			}
-				
+
 			/*GRILLA CUADROS*/
-			
+
 				.grillaCuadros__cuadro{
 					width:100%;
 				}
-			
-			
+
+
 			/*FOOTER*/
 
 				#info .contenedor{
 					padding-top:50px;
 				}
-				
+
 				.footerWidget{
 					height:auto;
 				}
-				
+
 		}
