@@ -152,9 +152,7 @@
 
 		/*COLORES GENERALES*/
 
-		.overlayBgVideo{
-			background-color:rgba(0,0,0,0.3);
-		}
+
 
 		.homeButton{
 		    background: none;
@@ -189,6 +187,10 @@
 
 				section#queHacemos{
 					background-color:#ddd;
+				}
+
+				section#home{
+					background-color:transparent;
 				}
 
 
@@ -338,9 +340,6 @@
 /*------------------------------------------- HOME ----------------------------------------------------*/
 
 		section#home{
-			background: url("../img/bg_mauro_home.jpg");
-			background-size: cover;
-			background-position: center;
 		}
 
 		.fullScreenVideo{
@@ -350,7 +349,7 @@
 			bottom: 0;
 			min-width: 100%;
 			min-height: 100%;
-			z-index: -2;
+			z-index: -1;
 		}
 
 		.overlayBgVideo{
@@ -360,7 +359,7 @@
 			top:0;
 			left:0;
 			display: table;
-			background-color: rgba(0,0,0,0.7);
+			background-color: rgba(0,0,0,0.5);
 		}
 
 		.homeButton{
