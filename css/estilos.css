@@ -359,7 +359,10 @@
 			top:0;
 			left:0;
 			display: table;
-			background-color: rgba(0,0,0,0.5);
+			background-image: url(../img/bg_mauro_home.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 
 		.homeButton{
