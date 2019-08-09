@@ -92,18 +92,21 @@ section {
   font-size: 1.5em;
   display: inline-block;
   margin-bottom: 20px;
-  background-color: rgba(0, 173, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
   padding: 5px 80px;
 }
 
 #home .redes-home {
   font-size: 0.8em;
   display: block;
-  width: 180px;
+  width: 50px;
   margin: auto;
   color: black;
-  background-color: #00ADFF;
   /*------------------------ Quienes somos ------------------------*/
+}
+#home .redes-home img {
+  width: 50px;
 }
 
 #quienes-somos .container {
@@ -133,7 +136,7 @@ section {
 #quienes-somos .panel-izquierdo img {
   position: absolute;
   left: -45vw;
-  width: 80vw;
+  width: 60vw;
   top: 50%;
   transform: translate(0px, -50%);
 }
