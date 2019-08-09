@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*lg bootstrap*/
+.bg-oscuro {
+  background-color: black;
+  color: white;
+}
+
+a:link, a:visited, a:hover, a:active {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 75px;
+  font-size: 2.5em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.section-fh {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+section {
+  box-shadow: 0 0 0 1px black;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  /*------------------------ Header ------------------------*/
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  z-index: 1;
+}
+#header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #e30000;
+  background: linear-gradient(90deg, #e30000 0%, #e30000 20%, #ffa300 20%, #ffa300 40%, #ffe600 40%, #ffe600 60%, #33cb00 60%, #33cb00 80%, #00adff 80%, #00adff 100%);
+}
+
+#header .logo-header {
+  width: 250px;
+  /*------------------------ Home ------------------------*/
+}
+
+#home {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#home .elementos-home {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 25vh;
+  color: white;
+}
+
+#home .banner-principal-home {
+  margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+}
+#home .banner-principal-home .titulo-home {
+  font-size: 2.8em;
+  line-height: 1em;
+  margin-bottom: 30px;
+}
+#home .banner-principal-home .subtitulo-home {
+  font-size: 0.9em;
+}
+
+#home .cta-home {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-bottom: 20px;
+  background-color: rgba(0, 173, 255, 0.8);
+  padding: 5px 80px;
+}
+
+#home .redes-home {
+  font-size: 0.8em;
+  display: block;
+  width: 180px;
+  margin: auto;
+  color: black;
+  background-color: #00ADFF;
+  /*------------------------ Quienes somos ------------------------*/
+}
+
+#quienes-somos .container {
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+#quienes-somos .row {
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+#quienes-somos .panel-50 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quienes-somos .titulo-quienes-somos {
+  font-size: 3.4em;
+  margin-bottom: 100px;
+}
+
+#quienes-somos .panel-izquierdo {
+  position: relative;
+}
+#quienes-somos .panel-izquierdo img {
+  position: absolute;
+  left: -45vw;
+  width: 80vw;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+
+/*------------------------ Qué hacemos ------------------------*/
+#que-hacemos .contenedor-general-servicios {
+  width: 100%;
+  position: relative;
+}
+
+#que-hacemos .contenedor-slider-servicios {
+  width: 100%;
+  overflow: hidden;
+}
+
+#que-hacemos .control {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+#que-hacemos .control.control-izquierda {
+  background-image: url("../img/flecha-izq.png");
+  left: -50px;
+}
+#que-hacemos .control.control-derecha {
+  background-image: url("../img/flecha-der.png");
+  right: -50px;
+}
+
+#que-hacemos .box-servicio {
+  border: 1px solid white;
+  padding: 30px;
+  min-height: 400px;
+  text-align: center;
+  position: relative;
+}
+#que-hacemos .box-servicio h3 {
+  margin-bottom: 30px;
+}
+
+#que-hacemos .icono-servicio {
+  margin: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/*------------------------ Cómo trabajamos ------------------------*/
+#como-trabajamos .box-etapa-trabajo {
+  border: 1px solid white;
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  #como-trabajamos .col-etapa-trabajo {
+    margin-bottom: 50px;
+  }
+}
+
+#como-trabajamos .numero-servicio {
+  font-size: 3em;
+}
+
+#como-trabajamos h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60%;
+  margin: auto;
+  margin-top: 5px;
+}
+
+#como-trabajamos .t1::after {
+  background-color: #E30000;
+}
+
+#como-trabajamos .t2::after {
+  background-color: #FFA300;
+}
+
+#como-trabajamos .t3::after {
+  background-color: #FFE600;
+}
+
+#como-trabajamos .icono-proceso {
+  width: 100%;
+  max-width: 150px;
+  margin: auto;
+}
+
+/*------------------------ Colaboradores ------------------------*/
+#colaboradores {
+  text-align: center;
+}
+
+#colaboradores .contenedor-imagen {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+#colaboradores img.item-colaboradores {
+  width: 100%;
+  /*------------------------ Colaboradores ------------------------*/
+}
+
+#contacto .formulario-contacto {
+  margin-top: 50px;
+}
+
+#contacto .form-group.group-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacto .group-1 .item-form {
+  width: 45%;
+}
+
+#contacto .form-control {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+#contacto textarea {
+  resize: none;
+}
+
+#contacto .boton-enviar {
+  border-radius: 0;
+  text-transform: uppercase;
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+#contacto .contenedor-items-contacto {
+  margin-top: 50px;
+}
+
+#contacto .item-contacto {
+  margin-bottom: 20px;
+}
+#contacto .item-contacto.whatsapp {
+  font-weight: bold;
+}
+
+#contacto .item-contacto img {
+  width: 30px;
+  float: left;
+  margin-right: 15px;
+}
+
+#contacto .columna-mapa {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  #contacto .columna-mapa {
+    height: 600px;
+  }
+}
+
+#contacto .col-lg-6 {
+  padding: 60px;
+}
+
+#contacto .contenedor-mapa {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+#contacto .contenedor-mapa .wrapper-mapa {
+  width: 100%;
+  height: 100%;
+}
+#contacto .contenedor-mapa .wrapper-mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#contacto .overlay-mapa {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  mix-blend-mode: saturation;
+  background-color: #999;
+  position: absolute;
+  /*------------------------ Footer ------------------------*/
+}
+
+#footer-sitio {
+  padding: 15px;
+}
+#footer-sitio img {
+  width: 50px;
+}
+#footer-sitio .logo-footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
